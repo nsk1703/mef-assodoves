@@ -1,0 +1,82 @@
+admin_article_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Article:index" }
+    methods:  GET
+
+admin_article_draft:
+    path:     /brouillon
+    defaults: { _controller: "AdminBundle:Article:indexDraft" }
+    methods:  GET
+
+
+admin_article_deleted:
+    path:     /corbeille
+    defaults: { _controller: "AdminBundle:Article:indexDeleted" }
+    methods:  GET
+
+
+admin_article_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Article:newPublish" }
+    options:
+        expose: true
+   
+
+admin_article_draft_new:
+    path:     /new/draft
+    defaults: { _controller: "AdminBundle:Article:newDraft" }
+    options:
+        expose: true
+
+
+
+admin_article_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "AdminBundle:Article:edit" }
+    options:
+        expose: true
+
+admin_article_moveToTrash:
+    path:     /softdelete
+    defaults: { _controller: "AdminBundle:Article:moveToTrash" }
+    options:
+        expose: true
+
+admin_article_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Article:delete" }
+    options:
+        expose: true
+
+admin_article_make_visible:
+    path:     /make-visible
+    defaults: { _controller: "AdminBundle:Article:makeVisible" }
+    options:
+        expose: true
+
+
+admin_index_article_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Article:indexDataTableData" }
+    options:
+        expose: true
+
+admin_draft_article_dataTable_data:
+    path:     /entity-data/draft
+    defaults: { _controller: "AdminBundle:Article:draftDataTableData" }
+    options:
+        expose: true
+
+admin_soft_delete_article_dataTable_data:
+    path:     /entity-data/soft-delete
+    defaults: { _controller: "AdminBundle:Article:softDeleteDataTableData" }
+    options:
+        expose: true
+
+
+
+admin_article_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:Article:getItemData" }
+    options:
+        expose: true

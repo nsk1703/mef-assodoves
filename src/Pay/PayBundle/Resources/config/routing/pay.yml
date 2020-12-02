@@ -1,0 +1,11 @@
+app_fund_checkout_page:
+    path:     /
+    defaults: { _controller: PayBundle:Pay:checkout }  
+
+app_stripe_pay:
+    path:     /stripe/api/pay
+    defaults: { _controller: PayBundle:Pay:stripePay }  
+
+app_paypal_pay:
+    path:     /paypal/api/pay
+    defaults: { _controller: PayBundle:Pay:paypalPay }  

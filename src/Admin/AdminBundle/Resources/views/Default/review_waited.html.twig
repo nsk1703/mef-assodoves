@@ -1,0 +1,305 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+  <link href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+<!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Avis en attente</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+            <li class="breadcrumb-item active">avis en attente</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </div>
+
+  <!-- Data Table area Start-->
+  <div class="content" style="padding-bottom: 50px;">
+    <div class="row" >
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+          <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+              <p style="position:relative; top:10px;">Liste des avis en attente pour verification du contenu
+                
+
+              </p>
+          </div>
+          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+            <div class="data-table-area">
+              <table id="dataTable" class="table" style="width:100%;">
+<style>
+  .table thead th {
+  vertical-align: bottom;
+  border-bottom: 0px solid #dee2e6;
+  }
+  table .sorting_desc{
+  border:unset;
+  margin-top:10px;
+  }
+  table td, table tr{
+  border:unset;
+  }
+  .table td, .table th {
+  vertical-align: top;
+  border-top: unset;
+  margin-bottom:10px;
+  margin-top:10px;
+  border-bottom: 1px solid #dadce0;
+  }
+
+  .article_content{
+  padding-top:10px;
+  color: #8d8d8d; 
+  width:  100%;
+  max-width: 100%;
+  height: 30px;
+  overflow: hidden;
+  text-overflow:clip;
+  font-weight:200; 
+  font-size:14px;
+  }
+  .article_title{
+     width:  350px;
+    max-width: 350px;
+    height: 25px;
+    overflow: hidden;
+    text-overflow:ellipsi;
+  }
+  .article_content p{
+  margin-bottom: 0.8rem;
+  font-size: 13px;
+  line-height: 1.5;
+  }
+
+</style>
+                  <thead>
+                    <tr>
+                        <th></th>
+
+                    </tr>
+                  </thead>
+                  <tbody style="border:none;">
+                    
+                  
+                  <tr style="width:100%; overflow:none"></tr>                                      
+                  
+
+                  </tbody>                                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Data Table area End-->
+
+
+{% endblock %}
+{% block modals %}
+
+
+<div class="modal fade show" id="editEntityModal" tabindex="-1" role="dialog" aria-labelledby="showEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="showEntityModalLabel">Avis de <span class="entity_name" style="margin-left:2px;"></span></h5>
+        </div>
+        <form id="editEntityForm" action="{{ path('admin_review_edit')}}" method="post">	  	
+          <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+      
+            <p class="text-justify">
+              <span class="entity_content"></span>
+            </p>
+            <div class="form-group col-12">
+                {{ form_errors(edit_form.id) }}
+                {{ form_widget(edit_form.id) }}
+              </div>  
+
+              {{ form_widget(edit_form) }}
+          
+            
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn " data-dismiss="modal" style="color: rgba(60,64,67,0.38); ">Annuler</button>
+              <button type="submit" class="btn" style="color: #1a73e8; font-weight:600;">Rendre public</button>
+          </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_review_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de supprimer le commentaire de  <b><span class="entity_name" style="margin-left:2px;"></span></b>
+                            sur l'article  <b><span class="entity_article" style="margin-left:2px;"></span></b>
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: rgba(60,64,67,0.38); ">Annuler</button>
+            <button type="submit" class="btn" style="color: #1a73e8; font-weight:600;">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+{% block javascript %}
+
+  <!-- Page level plugins -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+  <script>
+  // Call the dataTables jQuery plugin
+  $(document).ready(function() {
+    $('#dataTable').DataTable({
+      "processing": true,
+      "lengthChange": false,
+      "searching": true,
+      "info": true,
+      "ordering": true,        
+      "autoWidth": false,
+      "responsive": true,
+      "ajax": Routing.generate('admin_review_waited_dataTable_data'),
+      "columns": [
+        { "data": "id", 
+              render : function(data, type, row) {
+                 
+                return '<div class=""style="padding-bottom:10px; padding-top:10px; width:100%;">'+
+                        '<div class="card mb-1" style="border:0px; box-shadow:unset; height:130px;">'+
+                            '<div class="">'+
+                              '<div class="card-body" style="">'+
+                                '<div class="card-text" style="margin-top:-10px;">'+
+                                  '<div class="article_content">'+row.content+'</div>'+
+                                '</div>'+
+                                '<div class="post-meta" style="margin-top:10px;font-size:12px; color: #8d8d8d;font-weight:200;">'+
+                                '<div class="post-meta-content"> <span class="far fa-clipboard" style="margin-right:5px;"></span> <span class="article_title_content">'+row.article+'</span>'+  
+                                    '<span class="post-views" style="margin-left:10px; margin-bottom:10px;"> <i class="far fa-user" style="margin-right:7px;"></i> '+row.email+'</span> <span class="placeholder-post-read-later"></span>'+
+                                    '<span class="post-views" style="margin-left:10px; color: #8d8d8d;"><span class="" style="  margin-right:5px;"><span class="fa fa-clock" style="font-size:10px; color: #00b8b1;"></span>le</span>'+
+                                    '<span>'+row.date+'</span>'+
+                                    '</span> <br><br>'+
+                                    
+                                      '<a  href="#" onclick="openEditModal('+data+');" class="edit-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px; margin-right:10px;">Afficher</a>'+
+                                      '<a href="#" onclick="openDeletModal('+data+');" class="delete-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px;">Supprimer</a>'+
+
+                                  '</div>'+
+                                '</div>'+
+                              '</div>'+
+                            '</div>'+
+                        '</div>'+
+                      '</div>'
+            }    
+        
+         },
+        ],
+      order: [
+            [0, 'desc']
+        ]
+    });
+       
+  });
+
+
+
+//open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_review_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_review_delete_id" ).val(data.id);   
+       $(".entity_name").text(data.email); 
+       $(".entity_article").text(data.article); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+//open edit modal form
+function openEditModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_review_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_review_edit_id" ).val(data.id);   
+       $(".entity_name").text(data.email); 
+       $(".entity_article").text(data.article); 
+       $(".entity_content").text(data.content); 
+       $('#editEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+
+
+
+
+$('.article_content').each(function() {
+  var maxchars = 200;
+  var seperator = '...';
+
+  if ($(this).text().length > (maxchars - seperator.length)) {
+      $(this).text($(this).text().substr(0, maxchars-seperator.length) + seperator);
+  }
+});
+$('.article_title_content').each(function() {
+  var maxchars = 30;
+  var seperator = '...';
+
+  if ($(this).text().length > (maxchars - seperator.length)) {
+      $(this).text($(this).text().substr(0, maxchars-seperator.length) + seperator);
+  }
+});
+
+
+
+
+  </script>
+
+{% endblock %}

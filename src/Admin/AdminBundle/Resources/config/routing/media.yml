@@ -1,0 +1,16 @@
+admin_media_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Media:index" }
+    methods:  GET
+
+admin_media_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Media:new" }
+    options:
+        expose: true
+
+admin_media_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Media:delete" }
+    options:
+        expose: true

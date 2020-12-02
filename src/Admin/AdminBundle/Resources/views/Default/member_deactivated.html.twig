@@ -1,0 +1,187 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Membres déactivés</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Membres</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+<style>
+  .products-list .product-info {
+     margin-left: 16px; 
+     margin-right: 16px; 
+}
+.item{
+  padding:8px;
+}
+
+</style>
+
+  <!-- Data Table area Start-->
+  <section class="content" style="margin-bottom:30px;">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                      <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                          <p style="position:relative; top:10px;">Liste des membres désactivés</p>
+                      </div>
+                          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+                            <div class="data-table-area">
+                              <table id="dataTable" class="table" style="width:100%;">
+                                  <thead>
+                                      <tr>
+                                          <th class="text-left">Nom</th>
+                                          <th class="text-left">Compte</th>
+                                          <th class="text-left">Status</th>
+                                          <th class="text-left">Pays</th>  
+                                          <th class="text-left">Inscript le</th>  
+                                          <th class="action_table_btn"></th>                                      
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    {% for member in entity %}
+                                      
+                                        <tr>
+                                          
+                                            <td>{{ member.name }}</td>
+                                            <td>{{ member.user.email }}</td>
+                                            <td>{{ member.status.name }}</td>
+                                            <td>{{ member.country.name }}</td>
+                                            <td>{{ member.date|date("m/d/Y") }}</td>
+                                            <td><button class="btn btn-primary" style="cursor: pointer; background-color: #17a2b8;
+                                              border-color: #17a2b8; height:unset; padding:2px 12px;
+                                              color: #fff;" onclick="openShowModal('{{ member.id}}')"> Afficher</button></td>
+                                          
+                                        </tr>
+                                      
+                                    {% endfor %}
+                                   
+                                    </tbody>                                
+                              </table>
+                            </div>
+                            </div>
+                            <div class="form-footer" style="border-top: 1px solid #dadce0; padding-top:10px; padding-bottom:10px;">
+                              <div class="text-right" style="padding-left:16px; padding-right:16px;">
+                                  <a href="" class="btn" style="border:none; color: #1a73e8; font-weight:500; font-size:14px;">Envoyer un message <i class="fa fa-send"></i>    </a>
+                              </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+{% endblock %}
+
+
+{% block modals %}
+<div class="modal fade show" id="showEntityModal" tabindex="-1" role="dialog" aria-labelledby="showEntityModalLabel" style="display: none; "  >
+  <div class="modal-dialog  modal modal-dialog-centered modal-lg" role="document" >
+    <div class="modal-content ">
+      <div class="modal-header" style="">
+        <h5 class="modal-title" id="showEntityModalLabel" style="font-size: 14px; padding: unset;">Infromations sur le member</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>        
+      </div>
+        <div class="modal-body" style="max-height:280px; height:280px; overflow:auto;">       
+          <div class="card mb-3" style="border: 0px; box-shadow:unset;">
+            <div class="row ">
+                <div class="col-md-3 d-lg-block d-none">
+                    <img src="{{ asset('images/xzhnhtqymxqdsd4blug5.png')}}" class="logo card-img" alt="..." style="height:150px; width:180px;">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                    <h5 class="company_name" style="font-size: 14px; font-weight:500; margin-top:-16px;">Google incorporation</h5>
+                    <div>Status du membre: <span class="status" style="font-size: 14px; font-weight:550;">Bronze</span> </div>
+                    <div>Email: <span class="email" style="font-weight:500;">contact@gmail.com</span> Tél: <span class="phone" style="font-weight:500;">+237671178965</span></div>
+                    <div>Pays: <span class="country" style="font-weight:500;">Cameroun</span></div>
+                    <div style="margin-bottom:20px;margin-top:10px; text-transform:italics"> Créé par: <span class="user" style="font-weight:500;">samyetoa@gmail.com</span> le: <span class="date" style="font-weight: 500;">05/06/2020</span></div>
+                    <div class="margin-top:20px;">
+                      <span class="title" style="font-size:14px; font-weight:500;">Activité</span>
+                      <p class="description" style="font-size:13px;">
+                        Des milliers de produits high-tech et des livres disponibles dans plus de 100 magasins en France et sur fnac.com
+                      </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>   
+        </div>   
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+
+
+
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+
+    <script>
+    // Call the dataTables jQuery plugin
+
+    $('#dataTable').DataTable({
+        "processing": true,
+        "lengthChange": true,
+        "searching": true,
+        "info": true,
+        "ordering": true,        
+        "autoWidth": false,
+        "responsive": true,
+        order: [
+            [0, 'desc']
+        ]
+    });
+
+//open edit modal form
+function openShowModal(id){
+ $.ajax({
+      type: 'get', 
+        url: Routing.generate('admin_member_item_data', {id: id}),
+        success: function(data) {
+          $(".company_name").text(data.name); 
+          $(".status").text(data.status); 
+          $(".email").text(data.email); 
+          $(".phone").text(data.phone); 
+          $(".country").text(data.country); 
+          $(".user").text(data.user); 
+          $(".date").text(data.date); 
+          $(".description").text(data.company_activity); 
+          if(data.image != null){
+            $(".logo").attr('src', ''+data.image+''); 
+          }else{
+            $(".logo").attr('src', '../../images/empty-image.jpg'); 
+          }
+          
+          $('#showEntityModal').modal('show');   
+        }
+    });
+
+    
+    }
+  </script>
+
+{% endblock %}

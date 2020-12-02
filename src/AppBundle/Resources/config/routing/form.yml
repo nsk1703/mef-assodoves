@@ -1,0 +1,19 @@
+app_volonteer_new_entity:
+    path:     /volonteeer/new
+    defaults: { _controller: "AppBundle:Form:volonteerSubmitForm" }
+    options:
+        expose: true
+
+
+app_review_new:
+    path:     /review/new
+    defaults: { _controller: "AppBundle:Form:reviewNew" }
+    options:
+        expose: true
+
+
+app_email_new:
+    path:     /email/new
+    defaults: { _controller: "AppBundle:Form:emailCatch" }
+    options:
+        expose: true

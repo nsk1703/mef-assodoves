@@ -1,0 +1,4 @@
+routingPay:
+  resource: "@PayBundle/Resources/config/routing/pay.yml"
+  prefix: /checkout
+

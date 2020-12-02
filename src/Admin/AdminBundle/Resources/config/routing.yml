@@ -1,0 +1,44 @@
+admin_homepage:
+    path:     /
+    defaults: { _controller: AdminBundle:Dashboard:index }
+
+admin_emailpage:
+    path:     /email
+    defaults: { _controller: AdminBundle:Dashboard:email }
+
+
+routingMember:
+  resource: "@AdminBundle/Resources/config/routing/member.yml"
+  prefix: /member
+
+
+routingContribution:
+  resource: "@AdminBundle/Resources/config/routing/contribution.yml"
+  prefix: /contribution
+
+
+routingArticle:
+  resource: "@AdminBundle/Resources/config/routing/article.yml"
+  prefix: /article
+
+routingCause:
+  resource: "@AdminBundle/Resources/config/routing/cause.yml"
+  prefix: /projet
+
+routingCatalogue:
+  resource: "@AdminBundle/Resources/config/routing/catalogue.yml"
+  prefix: /catalogue
+
+routingProjectCategory:
+  resource: "@AdminBundle/Resources/config/routing/projectCategory.yml"
+  prefix: /catalogue-projet
+
+
+routingReview:
+  resource: "@AdminBundle/Resources/config/routing/review.yml"
+  prefix: /review
+
+
+routingMedia:
+  resource: "@AdminBundle/Resources/config/routing/media.yml"
+  prefix: /media

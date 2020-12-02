@@ -1,0 +1,16 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: c1462208c_mef_doves
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: mail.mef-assodoves.org
+    mailer_user: no-reply@mef-assodoves.org
+    mailer_password: 'XGfVBb.Oi#MP'
+    secret: ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ
+    facebook: facebook.com
+    twitter: twitter.com
+    instagram: instagram.com
+    telephone: 1234567890

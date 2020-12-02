@@ -1,0 +1,20 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+# This file is auto-generated during the composer install
+# This file is auto-generated during the composer install
+parameters:
+    database_host: ftp.mef-assodoves.org
+    database_port: 21
+    database_name: c1462208c_colombes
+    database_user: c1462208c
+    database_password: k534XKpyNY3xCuJ
+    mailer_transport: smtp
+    mailer_host: mail.mef-assodoves.org
+    mailer_user: no-reply@mef-assodoves.org
+    mailer_password: 'XGfVBb.Oi#MP'
+    secret: ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ
+    facebook: facebook.com
+    twitter: twitter.com
+    instagram: instagram.com
+    telephone: 1234567890

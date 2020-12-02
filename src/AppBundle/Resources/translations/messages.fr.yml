@@ -1,0 +1,82 @@
+nav:
+ link_1: Acceuil
+ link_2: A propos
+ link_3: Actualité
+ link_4: Question/réponse
+ link_5: Devenir volontaire
+ link_6: Partenaires
+ link_7: Mentions légals
+ link_8: Mon compte
+ link_8.1: Modifier mon compte
+ link_9: Mes Transcations
+ link_9.1: Toutes mes Transcations
+ link_9.2: Suivre mes transactions
+ link_10: Paramètres
+ link_10.1: Completer et modifier mes informations
+ link_11: Abonnements
+ link_11.1: Mes abonnements
+
+
+table_titles:
+ title_1: Achat
+ title_2: Montant
+ title_3: Souscrption au statut membre 
+
+
+profile_form:
+ title_1: Infromations sur votre profile
+ title_2: Infromations sur votre structure
+ title_3: Description de la structure
+ title_4: Logo de la structure
+ gender.1: Homme
+ gender.2: Femme
+ name: Nom
+ email: Adresse email
+ country: Pay de résidence
+ phone: Téléphone
+ company_name: Nom de la structure
+ company_activity: Brief description de l'activité de la structure
+ work: Poste occupé dans la structure
+
+
+
+
+btn:
+ donate_btn: Faites un don
+ send_btn: Envoyer
+ save: Enregistrer
+ send_print: Imprimer
+ watch_video_btn: Regardez notre vidéo intro
+ see_more_news_btn: Voir plus de nouvelles de vouss
+ subscribe_newsletter_btn: S'inscrire maintenant!
+ pay_btn:  Payez maintenant
+
+footer_title:
+ link_title_1: A Propos
+ link_title_2: Nos Services
+ link_title_3: Conditions
+ link_title_4: Contact
+ 
+
+sidebar_titles:
+ title_0: Rechercher
+ title_1: Nouveatés
+ title_2: Catégories
+ title_3: Obtenez nos dernières mise à jour sur nos newsletters
+ title_4: Laissez un like
+
+article_single_titles:
+ title_1: Articles similaires
+ title_2: Avis
+ title_3: Ajouter votre avis
+ title_4: Laissez un like
+
+review_form:
+ text_1: Votre Nom
+ text_2: Votre adresse email
+ text_3: Votre avis
+
+donate_page:
+ text_1: affiche votre Nom
+ text_2: affiche votre site web 
+ text_3: affiche votre logo

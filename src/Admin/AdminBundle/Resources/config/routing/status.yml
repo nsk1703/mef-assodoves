@@ -1,0 +1,37 @@
+admin_status_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Status:index" }
+    methods:  GET
+
+admin_status_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Status:dataTableData" }
+    options:
+        expose: true
+
+
+admin_status_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:Status:getItemData" }
+    options:
+        expose: true
+
+
+admin_status_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Status:new" }
+    options:
+        expose: true
+   
+
+admin_status_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "AdminBundle:Status:edit" }
+    options:
+        expose: true
+
+admin_status_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Status:delete" }
+    options:
+        expose: true

@@ -1,0 +1,29 @@
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    #    prefix:   /{_locale}/
+    prefix: /
+    requirements:
+        _locale: en|fr
+
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+pay:
+    resource: "@PayBundle/Resources/config/routing.yml"
+#    prefix:   /{_locale}/
+    prefix: /
+    requirements:
+        _locale: en|fr 
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+#    prefix:   /{_locale}/
+    prefix:   /
+    requirements:
+        _locale: en|fr
+
+       
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+    

@@ -1,0 +1,571 @@
+{% extends "layout/base.html.twig" %}
+{% block title %}{{entity.title}}{% endblock %}
+{% block socialMediaMeta %}
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Association les Colombes">
+<meta property="og:title" content="{{ entity.title }}">
+<meta property="og:description" content="{{ entity.content|raw }}">
+<meta property="og:locale" content="en_CM">
+<meta property="og:locale:alternate" content="fr_CM">
+<meta property="og:url" content="{{ path('app_catalogue_index', { 'slug' : entity.slug }) }}">
+<meta property="og:image" content="{{ asset(entity.image.AssetPath) }}">
+<meta name="twitter:title" content="{{ entity.title }}">
+<meta name="twitter:description" content="{{ entity.content|raw }}">
+<meta name="twitter:creator" content="Association les Colombes">
+<meta name="twitter:image" content="{{ path('app_catalogue_index', { 'slug' : entity.slug }) }}">
+<meta name="twitter:domain" content="{{ path('app_catalogue_index', { 'slug' : entity.slug }) }}">
+{% endblock %}
+{% block content %}
+{% set totalDonation = 0 %}
+{% set AmountNeededPercentage = 0 %}
+{% set trans_day_hash = { 
+	"Monday": "Lun", 
+	"Tuesday": "Mar", 
+	"Wednesday": "Mer", 
+	"Thursday": "Jeu", 
+	"Friday": "Ven", 
+	"Saturday": "Sam", 
+	"Sunday": "Dim" 
+} 
+%}        
+{% set trans_month_hash = { 
+	"January": "Jan", 
+	"Febuary": "Fev", 
+	"March": "Mar", 
+	"April": "Avr", 
+	"May": "Mai", 
+	"June": "Jui", 
+	"July": "Juil", 
+	"August": "Aoû", 
+	"September": "Sept", 
+	"October": "Oct", 
+	"November": "Nov", 
+	"December": "Dec" 
+   
+} 
+%}   
+
+{% set trans_year_hash = { 
+	"18": "2018", 
+	"19": "2019", 
+	"20": "2020",
+	
+   
+} 
+%}   
+
+<div class="" style=" margin: auto; margin-bottom:30px;">
+    <div class="container">
+        <div class="row row-lg-eq-height">
+            <!-- Post Content -->
+            <div class="col-lg-9 col-md-12">
+                <div class="post_content">
+
+                    <!-- Post Body -->
+
+                    <article class="post_body post_p">
+						<div class="post-categories-container">
+                            <div class="post-categories">
+                                <a href="">Des Sports</a>
+                            </div>
+                        </div>
+                        <h2 style="font-size: 24px;">{{ entity.title }}</h2>
+                        <div class="post-meta" style="margin-top:16px; margin-bottom:16px;">
+                            <div class="post-meta-content"> 
+                                <span class="post-auhor-date"> 
+                                    <a href="" class="post-date"> 3 jours depuis </a> 
+                                </span> 
+                              
+                                <a href="" class="post-comments"> <i class="fa fa-comments"></i> 0 </a> 
+                                <span class="post-readtime"> <i class="fa  fa-clock"></i> 3 min 
+                                    <span>lis</span> 
+                                </span> 
+                                <span class="post-views"> <i class="icon icon-eye"></i> 21 </span> 
+                                <span class="placeholder-post-read-later"></span>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/cause-bg.jpg')}}" alt="" style="border-radius:5px; width:100%; margin-bottom:30px;">
+                       
+
+							<h3 style="font-size:18px;">Objectif : {{ entity.goal }}</h3>
+							<p class="">{{ entity.content|raw }}</p>
+							<p style="font-weight: 500; color:#00c292;">Contribution necessaire : {{ entity.amount }} €</p>
+						</article>
+						
+
+<style>
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.progress {
+	width: 100px;
+	height: 100px;
+	background: none;
+	position: relative;
+  }
+  
+  .progress::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 6px solid #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  
+  .progress>span {
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+  }
+  
+  .progress .progress-left {
+	left: 0;
+  }
+  
+  .progress .progress-bar {
+	width: 100%;
+	height: 100%;
+	background: none;
+	border-width: 6px;
+	border-style: solid;
+	position: absolute;
+	top: 0;
+  }
+  
+  .progress .progress-left .progress-bar {
+	left: 100%;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	border-left: 0;
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+  }
+  
+  .progress .progress-right {
+	right: 0;
+  }
+  
+  .progress .progress-right .progress-bar {
+	left: -100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	border-right: 0;
+	-webkit-transform-origin: center right;
+	transform-origin: center right;
+  }
+  
+  .progress .progress-value {
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+  .border-primary {
+    border-color: #00c292!important;
+}
+</style>
+{% for donation in donation %}
+	{% set totalDonation = totalDonation + donation.info.member.contribution %}							
+{% endfor %}
+
+<div class="py-5">
+	<div class="row">
+	  <div class="col-xl-12 col-lg-12 mb-4">
+		<div class="bg-white rounded-lg p-5 shadow" style="border-radius: 8px;">
+		  <h3 class="h6 font-weight-bold text-center mb-4">Fonds collectées</h3>
+  
+		  <!-- Progress bar 1 -->
+		  {% set AmountNeededPercentage = ( totalDonation / entity.amount) * 100 %}
+		  <div class="progress mx-auto" data-value='{{ AmountNeededPercentage|round() }}'>
+			<span class="progress-left">
+						  <span class="progress-bar border-primary" ></span>
+			</span>
+			<span class="progress-right">
+						  <span class="progress-bar border-primary"></span>
+			</span>
+			<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+			  <div class="h2 font-weight-bold">{{ AmountNeededPercentage|round() }}<sup class="small">%</sup></div>
+			</div>
+		  </div>
+		  <!-- END -->
+  
+		  <!-- Demo info -->
+		  <div class="row text-center mt-4">
+			<div class="col-6 border-right">
+			  <div class="h4 font-weight-bold mb-0">{{ donation|length }} </div><span class="small text-gray">participants</span>
+			</div>
+			<div class="col-6">
+			  <div class="h4 font-weight-bold mb-0">{{ totalDonation }} € </div><span class="small text-gray">sur {{ entity.amount }}  €</span>
+			</div>
+		  </div>
+		  <div style="margin-top:30px;">
+			<a href="{{ path('app_donation_pay', { 'slug' : entity.slug }) }}" class="btn" style="
+			width:100%;
+				color: #fff !important;
+				font-size: 12px !important;
+				background-color: #00c292;
+				padding: 8px 20px !important;
+				font-weight: 500 !important;
+				text-transform:uppercase;
+				border-radius:30px;
+				box-shadow: 0 2px 12px -6px #00c292!important;
+
+
+			">Je participe au projet</a>
+		</div>
+		  <!-- END -->
+		</div>
+	  </div>
+
+	</div>
+  </div>
+						
+					
+
+					<div class=" post_share ml-sm-auto" style="margin-top:30px; padding-left:10px;">
+                           
+						<ul class="post_share_list">
+							<li class="post_share_item"> <span>share</span></li>
+							<div class="fb-share-button" data-href="http://127.0.0.1:8000/cause/construire-une-ecole-a-bafang" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fcause%2Fconstruire-une-ecole-a-bafang&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+						</ul>
+					</div>
+
+					<div class=" d-none d-lg-block">
+
+					  <ul class="nav nav-tabs nav-justified " id="myTab" role="tablist"  style="background: #fff; margin-top:20px; border-radius:6px;">
+						<li class="nav-item" role="presentation">
+						  <a class="nav-link active" id="contribution-lg-tab" data-toggle="tab" href="#contribution-lg" role="tab" aria-controls="contribution-lg" aria-selected="true"><i class="far fa-thumbs-up"></i> Participants</a>
+						</li>
+						<li class="nav-item" role="presentation">
+						  <a class="nav-link" id="news-lg-tab" data-toggle="tab" href="#news-lg" role="tab" aria-controls="news-lg" aria-selected="false"><i class="fa fa-file-alt"></i> Actualité</a>
+						</li>
+						
+					  </ul>
+					  <div class="tab-content" id="myTabContent" style="background: #fff; padding-top:20px; border-radius:6px;">
+						<div class="tab-pane fade show active" id="contribution-lg" role="tabpanel" aria-labelledby="contribution-lg-tab" style="min-height:300px;padding:30px;">
+							
+							{% for donation in donation %}
+							
+									<div class="fdr-contributor" style="">
+										<div class="fdr-contributor-picture" style="background-image: url({{asset('images/no-picture.png')}});">
+											<p></p>
+										</div>
+										<p class="fdr-contributor-detail">
+											<span class="fdr-contributor-name" title="Lucas Dubois">{{ donation.info.member.name }}</span>
+											a participé
+										</p>
+									</div>
+								{% endfor %}
+								
+
+
+
+
+						</div>
+
+						<div class="tab-pane fade" id="news-lg" role="tabpanel" aria-labelledby="news-lg-tab">
+							<div class="timeline" style="padding:16px;">
+								{% if causeNews|length == 0 %}
+
+									<h3 class="text-center" style="font-size: 14px;">Aucune actualité disponible</h3>
+									
+								{% endif %}
+								{% for causeNews in causeNews %}
+									<!-- timeline time label -->
+									<div class="time-label">
+									<span class="bg-green" style="">
+										{{ trans_day_hash[causeNews.date|date('l')] }} 
+										{{ causeNews.date|date("d") }} 
+										{{ trans_month_hash[causeNews.date|date('F')] }}  
+										{{ trans_year_hash[causeNews.date|date('y')] }} 
+									</span>
+									</div>
+									<!-- /.timeline-label -->
+		
+									<!-- timeline item -->
+									<div>
+									<i class="fa fa-user" ></i>
+					
+									<div class="timeline-item">
+										<h3 class="timeline-header"><a href="#">{{causeNews.title}}</h3>
+										<p>{{causeNews.content}}</p>
+									</div>
+									</div>
+									<!-- END timeline item -->
+								{% endfor %}
+							  </div>
+						</div>
+					
+					  </div>
+
+						
+					</div>
+
+
+
+                </div>
+            </div>  
+            <div class="col-lg-3 col-md-12" >
+
+				<div class="sidebar" style="padding-left: 0px; margin-top:18px;">
+
+                    <div class="sidebar_section" style=" padding:16px;">
+                        <div class="sidebar_title_container" >
+                            <h3  style="padding-top:20px; font-size: 18px; color: #505050; line-height: normal!important;">Nouveatés</h3>
+                        </div>
+                        <div class="sidebar_section_content" style=" padding-top:30px !important;">
+                            <!-- Top Stories Slider -->
+                            <div class="sidebar_slider_container">
+                                <!-- Sidebar Post -->
+                                <div class="side_post" style="border-bottom: 1px solid #f0f0f0;
+                                margin-bottom: 20px; padding-bottom: 10px;
+                               ">
+                                    <a href="post.html">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ asset('images/1-585x440.png') }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                line-height: 135%!important; font-size:13px;color: #3f3f3f;
+                                                font-weight: 700;"> Connaissez-vous vos joueurs : David Silva</div>
+                                                <small class="post_meta">As<span style="color: #8d8d8d!important;">Publié le </span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- Sidebar Post -->
+                                <div class="side_post" style="border-bottom: 1px solid #f0f0f0;
+                                margin-bottom: 20px;padding-bottom: 10px;
+                                ">
+                                    <a href="post.html">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ asset('images/cause-6.jpg') }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                line-height: 135%!important; font-size:13px;color: #3f3f3f;
+                                                font-weight: 700;"> Connaissez-vous vos joueurs : David Silva, Demi Strokes</div>
+                                                <small class="post_meta">Ass<span style="color: #8d8d8d!important;">Publié le </span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Sidebar Post -->
+                                <div class="side_post" style="border-bottom: 1px solid #f0f0f0;
+                                margin-bottom: 20px;
+                                padding-bottom: 10px;
+                                ">
+                                    <a href="post.html">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ asset('images/1-585x440.png') }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                line-height: 135%!important; font-size:13px;color: #3f3f3f;
+                                                font-weight: 700;"> Connaissez-vous vos joueurs : David Silva</div>
+                                                <small class="post_meta">As<span style="color: #8d8d8d!important;">Publié le </span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <!-- Sidebar Post -->
+                                <div class="side_post" style="
+                                margin-bottom: 20px; padding-bottom: 10px;
+                                ">
+                                    <a href="post.html">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ asset('images/cause-6.jpg') }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                line-height: 135%!important; font-size:13px;color: #3f3f3f;
+                                                font-weight: 700;"> Connaissez-vous vos joueurs : David Silva, Demi Strokes</div>
+                                                <small class="post_meta">Ass<span style="color: #8d8d8d!important;">Publié le </span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+                                <div style="margin-top:30px; margin-bottom:30px;">
+                                    <img src="{{asset('images/WebiLearn-FR-Home2.jpg')}}" alt="" style="width:100%;">
+                                </div>
+
+                                <div class="widget-title-styling" style="margin-bottom:20px;">
+                                    <h3 class="widget-title">Laissez un like</h3>
+                                </div>
+                                <div id="wp_subscribe-2" class="widget widget-item wp_subscribe">
+                                    <div id="wp-subscribe" class="wp-subscribe-wrap wp-subscribe wp-subscribe-1" >
+                                        <h4 class="title">OBTENEZ LES DERNIERES<br>MISES A JOUR DE QBUZZ</h4>
+                                        <form action="" method="post" class="" id=""> 
+                                            <input class="regular-text email-field" type="email" name="email" placeholder="Entrez votre e-mail ici" title="Entrez votre e-mail ici" required=""  style="background-color: rgb(255, 255, 204); color: rgb(49, 49, 49);"> 
+                                            <input type="hidden" name="form_type" value="widget"> 
+                                            <input type="hidden" name="service" value="mailchimp"> 
+                                            <input type="hidden" name="widget" value="wp_subscribe-2"> 
+                                            <input class="submit" type="submit" name="submit" value="S'inscrire maintenant!">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="widget-title-styling" style="padding-top:30px;">
+                                    <h3 class="widget-title">Instagram</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+					<div class="d-block d-lg-none d-md-block d-sm-block" style="margin-top:10px; margin-bottom:10px;">
+						<ul class="nav nav-tabs nav-justified " id="myTab2" role="tablist"  style="background: #fff; margin-top:20px; border-radius:6px;">
+							<li class="nav-item" role="presentation">
+							  <a class="nav-link active" id="contribution-sm-tab" data-toggle="tab" href="#contribution-sm" role="tab" aria-controls="contribution-sm" aria-selected="true"><i class="far fa-thumbs-up"></i> Participants</a>
+							</li>
+							<li class="nav-item" role="presentation">
+							  <a class="nav-link" id="news-sm-tab" data-toggle="tab" href="#news-sm" role="tab" aria-controls="news-sm" aria-selected="false"><i class="fa fa-file-alt"></i> Actualité</a>
+							</li>
+							
+						  </ul>
+						  <div class="tab-content" id="myTabContent" style="background: #fff; padding-top:20px; border-radius:6px;">
+							<div class="tab-pane fade show active" id="contribution-sm" role="tabpanel" aria-labelledby="contribution-sm-tab" style="min-height:300px;padding:30px;">
+								{% for donation in donation %}
+									
+									<div class="fdr-contributor" style="">
+										<div class="fdr-contributor-picture" style="background-image: url({{asset('images/no-picture.png')}});">
+											<p></p>
+										</div>
+										<p class="fdr-contributor-detail">
+											<span class="fdr-contributor-name" title="Lucas Dubois">{{ donation.info.member.name }}</span>
+											a participé
+										</p>
+									</div>
+								{% endfor %}
+								
+
+							</div>
+	
+							<div class="tab-pane fade" id="news-sm" role="tabpanel" aria-labelledby="news-sm-tab">
+								<div class="timeline" style="padding:16px;">
+									{% if causeNews|length == 0 %}
+										<h3 class="text-center" style="font-size: 14px;">Aucune actualité disponible</h3>										
+									{% endif %}
+									{% for causeNews in causeNews %}
+										<!-- timeline time label -->
+										<div class="time-label">
+										<span class="bg-green" style="">
+											{{ trans_day_hash[causeNews.date|date('l')] }} 
+											{{ causeNews.date|date("d") }} 
+											{{ trans_month_hash[causeNews.date|date('F')] }}  
+											{{ trans_year_hash[causeNews.date|date('y')] }} 
+										</span>
+										</div>
+										<!-- /.timeline-label -->
+			
+										<!-- timeline item -->
+										<div>
+										<i class="fa fa-user" ></i>
+						
+										<div class="timeline-item">
+											<h3 class="timeline-header"><a href="#">{{causeNews.title}}</h3>
+											<p>{{causeNews.content}}</p>
+										</div>
+										</div>
+										<!-- END timeline item -->
+									{% endfor %}
+								  </div>
+							</div>
+						
+						  </div>
+						
+					</div>
+
+						<!-- Top Stories -->
+						{% for sameCausesCategory in sameCausesCategory %}
+						<div class="sidebar_section" style="background: #fff; border-radius:6px; padding:16px;">
+							<div class="sidebar_title_container" >
+								<div class="sidebar_title" style="padding-top:20px; font-size:16px;">Causes similaires</div>
+							</div>
+							<div class="sidebar_section_content" style=" padding-top:30px !important;">
+								<!-- Top Stories Slider -->
+								<div class="sidebar_slider_container">
+									<!-- Sidebar Post -->
+									<div class="side_post">
+										<a href="post.html">
+											<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+												<div class="side_post_image"><div><img src="{{ sameCausesCategory.image.AssetPath }}" alt=""></div></div>
+												<div class="side_post_content">
+													<div class="side_post_title">{{ sameCausesCategory.title }}</div>
+													<small class="post_meta">Association Colombes<span>Publié le {{ sameCausesCategory.date|date("m/d/Y") }}</span></small>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+
+
+
+				</div>
+            </div>
+
+        </div>     
+    </div>
+
+
+ </div>
+
+
+{% endblock %}
+
+{% block javascript%}
+<script src="{{ asset('plugins/jquery-3.3.1.slim.min"') }}"></script>
+
+<script>
+
+	$(function() {
+
+		$(".progress").each(function() {
+	  
+		  var value = $(this).attr('data-value');
+		  var left = $(this).find('.progress-left .progress-bar');
+		  var right = $(this).find('.progress-right .progress-bar');
+	  
+		  if (value > 0) {
+			if (value <= 50) {
+			  right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+			} else {
+			  right.css('transform', 'rotate(180deg)')
+			  left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+			}
+		  }
+	  
+		})
+	  
+		function percentageToDegrees(percentage) {
+	  
+		  return percentage / 100 * 360
+	  
+		}
+	  
+	  });
+
+
+
+</script>
+{% endblock %}

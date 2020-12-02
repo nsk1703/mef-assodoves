@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="{{ asset('styles/main_styles.css') }}"/>
+{% trans_default_domain 'FOSUserBundle' %}
+<section id="form" style="margin-top:150px;"><!--form-->
+		<div class="container" >
+			<div class="row">
+	<center>
+    <p style="font-size:15px;">{{ 'registration.confirmed'|trans({'%username%': user.email}) }}</p>
+    {% if targetUrl %}
+    <p><a href="{{ targetUrl }}"  class="btn btn-primary">{{ 'registration.back'|trans }}</a></p>
+    {% else %}
+
+    <p><a href="{{	pathDefault }}"  class="btn btn-primary">Commencez vos achats</a></p>
+
+    {% endif %}
+    </center>
+</div>
+</div>
+</section>
+
+

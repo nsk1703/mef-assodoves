@@ -1,0 +1,201 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Galérie</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Galérie</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+<style>
+  .products-list .product-info {
+     margin-left: 16px; 
+     margin-right: 16px; 
+}
+.item{
+  padding:8px;
+}
+
+</style>
+
+
+
+  <!-- Data Table area Start-->
+  <section class="content" style="margin-bottom:30px;">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                      <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                          <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+                      </div>
+                          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+                            <div class="data-table-area">
+                            </div>
+                            </div>
+                            <div class="form-footer" style="border-top: 1px solid #dadce0; padding-top:10px; padding-bottom:10px;">
+                              <div class="text-right" style="padding-left:16px; padding-right:16px;">
+                                  <a href="#newEntityModal" data-toggle="modal" class="btn" style="background-color: #17a2b8; border-color: #17a2b8;color: #fff; border:none; width:100%; font-weight:600; font-size:14px;">Ajouter une image </a>
+                              </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+{% endblock %}
+
+
+{% block modals %}
+<div class="modal fade show" id="newEntityModal" tabindex="-1" role="dialog" aria-labelledby="newEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newEntityModalLabel">Ajoutez un media</h5>
+        </div>
+              <form action="{{ path('admin_media_new')}}" method="POST" id="newEntityForm" enctype="multipart/form-data">	
+                <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+
+                  <div  class="form-content" style="padding-bottom:10px; padding-top:10px;">
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label style="
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center center;" for="appbundle_media_image_file" class=" fileContainer">                            
+                            </label>
+                            {{ form_errors(form.image.file) }}
+                            {{ form_widget(form.image.file) }}
+                          
+                            <div class="form-group">
+                                {{ form_errors(form.image.name) }}
+                                {{ form_widget(form.image.name) }}                                       
+                            </div>                        
+                        </div>  
+                    </div>      
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(form.legend, "Legende de l'image*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(form.legend) }}
+                              {{ form_widget(form.legend) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                                             
+          
+                    {{ form_widget(form) }}
+                  </div>
+ 
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+                  <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Enregistrer</button>
+                </div>
+        
+        </form>	
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression du catalogue</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_media_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de supprimer le catalogue <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa supression complète et irrevocable de la base de données
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+            <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+
+
+ <script>
+ //open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('app_catalogue_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_delete_media_id" ).val(data.id);   
+       $(".entity_name").text(data.legend); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+
+  function readURL(input) 
+  {
+  
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function(e){
+        $('.fileContainer').css('background-image', 'url(' + e.target.result+ ')');          
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $('#appbundle_media_image_file').change(function(e){
+      readURL(this);
+      var fileName = e. target. files[0]. name;
+      $( "#appbundle_media_image_name" ).val( fileName );
+      $('.default_file_input_message').hide();
+  });
+ </script>
+
+
+{% endblock %} 

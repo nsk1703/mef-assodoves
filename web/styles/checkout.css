@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #313131;
+    background-color: #fff;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
+
+p a
+{
+    display: inline;
+    position: relative;
+    color: inherit;
+    border-bottom: solid 2px #fde0db;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+    text-decoration: none;
+    font-family: 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+p a:active
+{
+    position: relative;
+    color: #00b8b1;
+}
+p a:hover
+{
+    color: #00b8b1;
+    background: #fde0db;
+}
+p a:hover::after
+{
+    opacity: 0.2;
+}
+
+
+.checkout-page-container{
+    width:750px;  
+    margin:auto;
+}
+ 
+.card-amount span{
+    font-size: 17px; 
+    font-weight:530;
+
+}
+label{
+ font-weight: 500;
+}
+ 
+
+ .outcome {
+   float: left;
+   width: 100%;
+   padding-top: 8px;
+   min-height: 24px;
+   text-align: center;
+ }
+ 
+ .success,
+ .error {
+   display: none;
+   font-size: 13px;
+ }
+ 
+ .success.visible,
+ .error.visible {
+   display: inline;
+ }
+ 
+ .error {
+   color: #E4584C;
+ }
+ 
+ .success {
+   color: #666EE8;
+ }
+ 
+ .success .token {
+   font-weight: 500;
+   font-size: 13px;
+ }
+ 
+
+ .field  {
+   color: rgb(129, 145, 160);
+   display: block;
+   width: 80% ;
+   height: calc(2.35rem + 2px);
+   padding: .475rem .75rem;
+
+   font-size: 14px;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.field::-webkit-input-placeholder {
+color: rgb(129, 145, 160);
+}
+
+.field::-moz-placeholder {
+color: rgb(129, 145, 160);
+}
+
+
+.card-payement-badges img{
+    width:25px; 
+    height:20px;
+}
+.input-element-right{
+    margin-left:-50px;
+}
+.stripe-submit-btn{
+    border-radius:4px;
+    font-weight:600; 
+    padding:10px 80px;
+    background-color: #00b8b1; 
+    color:#fff; 
+    font-size:13px;
+}

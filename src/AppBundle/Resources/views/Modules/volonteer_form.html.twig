@@ -1,0 +1,19 @@
+<form id="newEntityForm" method="post" action="{{path("app_volonteer_new_entity")}}" style="margin-bottom:10px;">
+    <div class="form-row mb-3">
+        <div class="col-lg-12 col-12">
+            {{ form_label(form.name, "Votre nom", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+            {{ form_errors(form.name) }}
+            {{ form_widget(form.name) }}
+        </div>
+        <div class="col-lg-12 col-12">
+            {{ form_label(form.email, "Votre email", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+            {{ form_errors(form.email) }}
+            {{ form_widget(form.email) }}
+        </div>
+
+    </div>
+        
+        
+        <button type="submit" class="modal_submit_button">Subscribe</button>
+    </form>
+</div>

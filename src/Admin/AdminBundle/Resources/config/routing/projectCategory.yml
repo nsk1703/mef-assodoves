@@ -1,0 +1,37 @@
+admin_projectCategory_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:ProjectCategory:index" }
+    methods:  GET
+
+admin_projectCategory_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:ProjectCategory:dataTableData" }
+    options:
+        expose: true
+
+
+admin_projectCategory_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:ProjectCategory:getItemData" }
+    options:
+        expose: true
+
+
+admin_projectCategory_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:ProjectCategory:new" }
+    options:
+        expose: true
+   
+
+admin_projectCategory_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "AdminBundle:ProjectCategory:edit" }
+    options:
+        expose: true
+
+admin_projectCategory_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:ProjectCategory:delete" }
+    options:
+        expose: true

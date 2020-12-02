@@ -1,0 +1,25 @@
+[20-Sep-2020 22:58:58 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "AppBundle" from namespace "AppBundle".
+Did you forget a "use" statement for another namespace? in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/c1462208c/public_html/bin/console(27 in /home/c1462208c/public_html/app/AppKernel.php on line 20
+[22-Sep-2020 14:21:27 Europe/Paris] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSetGenerator.php on line 129
+[23-Sep-2020 13:49:32 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "AppBundle" from namespace "AppBundle".
+Did you forget a "use" statement for another namespace? in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/c1462208c/public_html/bin/console(27 in /home/c1462208c/public_html/app/AppKernel.php on line 20
+[24-Sep-2020 10:30:53 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\ClassNotFoundException: Attempted to load class "AppBundle" from namespace "AppBundle".
+Did you forget a "use" statement for another namespace? in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php(64): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php(148): Symfony\Bundle\FrameworkBundle\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /home/c1462208c/public_html/bin/console(27 in /home/c1462208c/public_html/app/AppKernel.php on line 20

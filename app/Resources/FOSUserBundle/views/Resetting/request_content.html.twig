@@ -1,0 +1,48 @@
+
+{% trans_default_domain 'FOSUserBundle' %}
+<div class="main_slider" style="margin-top:8%; height:400px; background-image:url({{ asset('images/slider_1.jpg') }}">
+		<div class="container fill_height">
+			<div class="row align-items-center fill_height">
+			</div>
+		</div>
+</div>
+
+<style>
+.resetPass {
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #4A4E5A;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+</style>
+	<div id="" style="background: #f2f2f2; padding-top:100px; padding-bottom:100px; padding-left:10px; padding-right:10px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom:50px;">
+					<h2>Mot de passe oublié?</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius Odit ab aliquam dolor eius</p>
+				</div>
+			</div>	
+		<div class="container col-md-8 col-md-offset-2 text-center">
+			<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+			    <div class="form-group">
+			        <label class="resetPass"style="font-weight:normal;" for="username">{{ 'resetting.request.username'|trans }}</label>
+			        <input type="text" id="username" name="username" class="input width:200px;" style="" required="required" />
+			    </div>
+			    <div class="form-group">
+
+			        <input type="submit"  class="red_button review_submit_btn trans_300" style="width:250px;"value="{{ 'resetting.request.submit'|trans }}" />
+
+			    </div>
+			</form>
+		</div>
+		
+	</div>
+
+</div>
+

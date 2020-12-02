@@ -1,0 +1,40 @@
+admin_review_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Review:index" }
+
+admin_review_waited_index:
+    path:     /waited
+    defaults: { _controller: "AdminBundle:Review:indexWaited" }
+
+
+admin_review_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Review:dataTableData" }
+    options:
+        expose: true
+
+admin_review_waited_dataTable_data:
+    path:     /entity-data/waited
+    defaults: { _controller: "AdminBundle:Review:waitedDataTableData" }
+    options:
+        expose: true
+
+
+
+admin_review_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:Review:getItemData" }
+    options:
+        expose: true
+
+admin_review_edit:
+    path:     /edit
+    defaults: { _controller: "AdminBundle:Review:edit" }
+    options:
+        expose: true
+
+admin_review_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Review:delete" }
+    options:
+        expose: true

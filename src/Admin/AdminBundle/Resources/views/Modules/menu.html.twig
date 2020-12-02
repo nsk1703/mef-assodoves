@@ -1,0 +1,32 @@
+<!-- Right navbar links -->
+<ul class="navbar-nav ml-auto">
+    <!-- Messages Dropdown Menu -->
+    <li class="nav-item dropdown">
+        <a class="nav-link"  href="{{path('admin_review_waited_index')}}">
+        <i class="far fa-comments"></i>
+        <span class="badge badge-danger navbar-badge">{{ review|length}}</span>
+        </a>
+    </li>
+    <!-- Notifications Dropdown Menu -->
+    <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="far fa-bell"></i>
+        <span class="badge badge-warning navbar-badge">{{ volonteer|length + contribution|length  }}</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+        <span class="dropdown-item dropdown-header">{{ volonteer|length + contribution|length  }} Notifications</span>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">
+            <i class="far fa-heart  mr-2"></i> {{ contribution|length}} dons reçus
+
+        </a>
+        
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> {{ volonteer|length}} volontaires inscripts
+
+        </a>
+
+    </li>
+
+</ul>

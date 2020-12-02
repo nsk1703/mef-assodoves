@@ -1,0 +1,81 @@
+nav:
+ link_1: Home
+ link_2: About us
+ link_3: News
+ link_4: Faq
+ link_5: Become Volonteer
+ link_6: Partners
+ link_7: Legal Policy
+ link_8: My account
+ link_8.1: Update my account
+ link_9: My Transcations
+ link_9.1: All Transcations
+ link_9.2: Follow my transactions
+ link_10: Parameters
+ link_10.1: Complete or update my informations
+ link_11: Subscriptions
+ link_11.1: My subscriptions
+
+table_titles:
+ title_1: Purchase
+ title_2: Amount
+ title_3: Subscription of the member status 
+
+
+
+profile_form:
+ title_1: Infromations about your profile
+ title_2: Infromations about your company
+ title_3: Description of your company
+ title_4: Brand
+ gender.1: Male
+ gender.2: Female
+ name: Name
+ email: Email Adresse
+ country: Country
+ phone: Phone number
+ company_name: Name of your company
+ company_activity: Brief description of your company's activity
+ work: Work done
+
+
+
+btn:
+  donate_btn: Donate
+  send_btn: send
+  save: Save
+  print: Print
+  watch_video_btn: Watch our intro video
+  see_more_news_btn: See more news of us
+  subscribe_newsletter_btn: subscribe now
+  pay_btn: Pay now 
+
+footer_title:
+ link_title_1: About Us
+ link_title_2: Our Services
+ link_title_3: Conditions
+ link_title_4: Contact
+
+sidebar_titles:
+ title_0: Search
+ title_1: New Articles
+ title_2: Category
+ title_3: Get our latest updates on our newsletters
+ title_4: Leave us a like
+
+
+article_single_titles:
+ title_1: Similar aerticles
+ title_2: Reviews
+ title_3: Add your review
+
+
+review_form:
+ text_1: Your Name
+ text_2: Your email
+ text_3: Your review
+
+donate_page:
+ text_1: shows your company
+ text_2: Shows your website 
+ text_3: shows your brand

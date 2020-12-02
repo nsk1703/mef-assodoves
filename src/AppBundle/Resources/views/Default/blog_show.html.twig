@@ -1,0 +1,509 @@
+{% extends "layout/base.html.twig" %}
+{% block content %}
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f0226efee78680012322e0e&product=inline-share-buttons" async="async"></script>
+<div class="" style="margin-top: 0px; overflow-x:hidden;">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb" style="margin-top:30px; margin-bottom:-25px;">
+                <ol class="breadcrumb" style="background-color: unset;">
+                    
+                    <li class="breadcrumb-item"><a href="{{path('app_home_page')}}">{{ 'nav.link_1'|trans }}</a></li>
+                    <li class="breadcrumb-item"><a href="{{path('app_article_index')}}">{{ 'nav.link_3'|trans }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #3f3f3f; font-weight:500;">{{entity.title }}</li>
+                    
+                    
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <!-- Post Content -->
+            <div class="col-lg-9 col-12" id="rightPadding"  style="">
+                <div class="post_content" class ="left-single-article-padding" >
+
+                    <!-- Post Body -->
+
+                    <article class="post_body" style="background: unset;">
+                        <div class="post-categories-container">
+                            <div class="post-categories" >
+                                {% if (app.request.getLocale()) == 'fr'  %} 
+                                    <a style="color: #00b8b1;" href="{{ path('app_catalogue_index', { 'slug' : entity.catalogue.slug }) }}">{{entity.catalogue.name}}</a>
+                                {%  elseif (app.request.getLocale()) == 'en' %}
+                                    <a style="color: #00b8b1;" href=="{{ path('app_catalogue_index', { 'slug' : entity.catalogue.slug }) }}">{{entity.catalogue.nameEn}}</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <h2 style="font-size: 24px;">{{ entity.title }}</h2>
+                        <div class="post-meta" style="margin-top:16px; margin-bottom:16px;">
+                            <div class="post-meta-content"> 
+                                <span class="post-auhor-date"> 
+                                    <span href="" class="post-date">{{ entity.user.username }} </span> 
+                                </span> 
+                              
+                                <span href="" class="post-comments"> <i class="fa fa-comments"></i> 
+                                    {{reviews|length}}
+                                </span> 
+                                <span class="post-readtime"> <i class="fa  fa-clock"></i> {{ entity.date|date("m/d/Y") }}
+                                    
+                                </span> 
+                                <span class="post-views"> <i class="fa fa-eye"></i> {{ entity.seenCount }} </span> 
+                                <span class="placeholder-post-read-later"></span>
+                            </div>
+                        </div>
+                        <div  style=" background: url('{{ entity.image.AssetPath }}') no-repeat; background-size:cover; background-position:80%; border-radius:5px;height:400px; width:100%; margin-bottom:30px;"></div>
+                    <p class="text-justify" style="color: #616161; letter-spacing: 1px; font-size: 13px; font-weight:400;">
+                    {% if (app.request.getLocale()) == 'fr'  %} 
+                        {{ entity.content|raw }}
+                    {%  elseif (app.request.getLocale()) == 'en' %}
+                        {{ entity.contentEn|raw }}
+                    {% endif %}
+                    </p>
+        
+                    </article>
+                    <div class="post-switch post-swtich-style2 d-none">
+                        <div class="row">
+                            <div class="col-md-6" style="margin-bottom:16px;"> 
+                                <a href="" class="post-switch-prev text-left">
+                                    <div class="post-switch-type">Précédent</div>
+                                    <h4> L'éducation en ligne votre allié pour accroître vos connaissances</h4> 
+                                </a>
+                            </div>
+                            <div class="col-md-6 "> 
+                                <a href="" class="post-switch-next text-lg-right text-left">
+                                    <div class="post-switch-type">Suivant</div>
+                                    <h4> Le Ramadan et le sport</h4> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sharethis-inline-share-buttons mb-3 mt-3"></div>
+                    {% if sameArticleCategory|length != 0 %}
+                        <!-- Similar Posts -->
+                        <div class="similar_posts" style="margin-top:20px;">
+                            <h3  style="padding-top:20px; font-size: 18px; color: #505050; line-height: normal!important;">{{'article_single_titles.title_1'|trans}}</h3>
+                            <div class="owl-carousel owl-theme blog_slider" style="margin-left:0px; margin-right:0px;">
+                                
+                                    {% for sameArticleCategory in sameArticleCategory %}
+                                        {% if (app.request.getLocale()) == 'fr'  %} 
+                                        <div class="owl-item ">
+                                            <div class="card" style="box-shadow: 0px 3px 6px 1px rgba(0,0,0,.07); margin-bottom:20px; border-top-left-radius: 8px; border-top-right-radius: 8px;">                      
+                                                <div class="" style="height:150px; background: url({{sameArticleCategory.image.AssetPath }}); border-top-left-radius: 8px; border-top-right-radius: 8px; background-size:cover; background-position:50%; "></div>
+                                                <div class="card-body" style="padding-left:16px; padding-right:16px; padding-top:10px;">
+                                                    <div class="post-categories"><a style="color: #00b8b1;" href="{{ path('app_catalogue_index', { 'slug' : sameArticleCategory.catalogue.slug }) }}" >{{sameArticleCategory.catalogue.name}}</a></div>
+                                                    <div class="mb-3 mt-3" >
+                                                    <a class="article_title" href="{{ path('app_article_show', { 'slug' : sameArticleCategory.slug }) }}" style="font-size: 14px!important;
+                                                        margin-top: 0!important;color: #3f3f3f;
+                                                        font-weight: 700;margin: 0 0 20px;
+                                                        padding: 0;
+                                                        width:100%;
+                                                        height:20px;
+                                                    
+                                                        overflow: hidden;
+                                                        text-overflow:ellipsis;
+                                                        "> {{sameArticleCategory.title}}</a></div>
+                                                    <div class="post-meta"> <div class="post-meta-content"> <span class="post-auhor-date">Publié le {{ sameArticleCategory.date|date("m/d/Y") }}  <span class="placeholder-post-read-later"></span> <i class="fa fa-eye" style="margin-left:5px;"></i> {{ sameArticleCategory.seenCount }} </span></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {%  elseif (app.request.getLocale()) == 'en' %}
+                                        <div class="owl-item ">
+                                            <div class="card" style="box-shadow: 0px 3px 6px 1px rgba(0,0,0,.07); margin-bottom:20px; border-top-left-radius: 8px; border-top-right-radius: 8px;">                      
+                                                <div class="" style="height:150px; background: url({{sameArticleCategory.image.AssetPath }}); border-top-left-radius: 8px; border-top-right-radius: 8px; background-size:cover; background-position:50%; "></div>
+                                                <div class="card-body" style="padding-left:16px; padding-right:16px; padding-top:10px;">
+                                                    <div class="post-categories"><a style="color: #00b8b1;" href="{{ path('app_catalogue_index', { 'slug' : sameArticleCategory.catalogue.slug }) }}" >{{sameArticleCategory.catalogue.nameEn}}</a></div>
+                                                    <div class="mb-3 mt-3" >
+                                                    <a  class="article_title" href="{{ path('app_article_show', { 'slug' : sameArticleCategory.slug }) }}" style="font-size: 14px!important;
+                                                        margin-top: 0!important;color: #3f3f3f;
+                                                        font-weight: 700;margin: 0 0 20px;
+                                                        padding: 0;
+                                                        width:100%;
+                                                        height:20px;
+                                                    
+                                                        overflow: hidden;
+                                                        text-overflow:ellipsis;
+                                                    
+                                                        "> {{sameArticleCategory.titleEn}}</a></div>
+                                                    <div class="post-meta"> <div class="post-meta-content"> <span class="post-auhor-date">Published on {{ sameArticleCategory.date|date("m/d/Y") }} <span class="placeholder-post-read-later"></span><i class="fa fa-eye" style="margin-left:5px;"></i> {{ sameArticleCategory.seenCount }} </span></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endif %}
+                                    {% endfor %}
+
+                            
+        
+                            </div>
+                            
+                        </div>
+                    {% endif %}
+
+                    <div class="col-lg-12" style="">
+                        <div class="row" style="margin-bottom:30px;">
+                            {% if reviews|length == 0 %}
+                            <div class="col-lg-12 col-md-12 " style="margin-top:100px;margin-bottom:100px;">
+                                <h3 class="comments_title">{{'article_single_titles.title_2'|trans}} <span>({{ reviews|length }})</span></h3>
+                                <div style="margin-top: 80px;">
+                                    <div class="post_comment_title">{{'article_single_titles.title_3'|trans}}</div>
+                                    <div class="post_comment_form_container_ mt-3">
+                                        <form id="newEntityForm" action="{{path('app_review_new')}}" method="post">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                {{ form_label(form.name, 'review_form.text_1'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}           
+                                                {{ form_errors(form.name) }}
+                                                {{ form_widget(form.name) }}
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                {{ form_label(form.email, 'review_form.text_2'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}
+                                                {{ form_errors(form.email) }}
+                                                {{ form_widget(form.email) }}
+        
+                                            </div>
+                                            </div>
+                                            <div class="form-group">
+                                                {{ form_label(form.content, 'review_form.text_3'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}
+                                            {{ form_errors(form.content) }}
+                                            {{ form_widget(form.content) }}
+                                            </div>
+
+                                            {{ form_errors(form.article) }}
+                                            {{ form_widget(form.article) }}
+    
+                                            {{ form_widget(form) }}
+                                            <button type="submit" class="comment_button" style="border: none;
+                                            color: #fff !important;
+                                            font-size: 14px !important;
+                                            background-color: #00b8b1;
+                                            padding: 10px 40px !important;
+                                            font-weight: 500 !important;
+                                            border-radius: 4px;
+                                            text-transform:uppercase;
+                                            box-shadow: 0 2px 12px -6px #00b8b1!important;">{{'btn.send_btn'|trans}}</button>
+                                    </form>
+                                    </div>
+                                </div>
+                               
+
+                          </div> 
+                            {% else %}
+        
+                            
+                            <div class="col-lg-12 col-md-12 order-sm-2 order-lg-1">
+        
+                                 <!-- Comments -->
+                                <div class="comments">
+                                    <div class="comments_title">{{'article_single_titles.title_2'|trans}} <span>({{ reviews|length }})</span></div>
+                                            <div class="comments_container">
+                                                <ul class="comment_list">
+        
+                                                {% for review in reviews %}
+
+                                                <div class="media mb-3">
+                                                    <img src="{{asset('images/avatar.png')}}" class="mr-3" alt="..." style="height: 50px; width:50px;">
+                                                    <div class="media-body">
+                                                        <div class="mt-0 mb-2" style="font-size: 13px;">Par: {{review.name}} <span style="margin-left:10px;"> Publié le: {{review.date|date("y/m/d")}}</span></div>
+                                                        {{review.content|raw}}
+                                                    </div>
+                                                </div>
+
+                                                {% endfor %}
+        
+                                                </ul>
+                                            </div>
+                                </div>
+        
+                            </div>                      
+                            <div class="col-lg-12 col-md-12 order-sm-1 order-lg-2" >
+                                  <!-- Post Comment -->
+                                <div class="post_comment" style="margin-top: 80px;">
+                                    <div class="post_comment_title">{{'article_single_titles.title_3'|trans}}</div>       
+                                    <div class="post_comment_form_container_ mt-3">
+                                        <form id="newEntityForm" action="{{path('app_review_new')}}" method="post">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                {{ form_label(form.name, 'review_form.text_1'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}           
+                                                {{ form_errors(form.name) }}
+                                                {{ form_widget(form.name) }}
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                {{ form_label(form.email, 'review_form.text_2'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}
+                                                {{ form_errors(form.email) }}
+                                                {{ form_widget(form.email) }}
+        
+                                            </div>
+                                            </div>
+                                            <div class="form-group">
+                                                {{ form_label(form.content, 'review_form.text_3'|trans, {'label_attr': {'style': 'color: gray; font-size:14px;'}}) }}
+                                            {{ form_errors(form.content) }}
+                                            {{ form_widget(form.content) }}
+                                            </div>
+
+                                            {{ form_errors(form.article) }}
+                                            {{ form_widget(form.article) }}
+    
+                                            {{ form_widget(form) }}
+                                            <button type="submit" class="comment_button" style="border: none;
+                                            color: #fff !important;
+                                            font-size: 14px !important;
+                                            background-color: #00b8b1;
+                                            padding: 10px 40px !important;
+                                            font-weight: 500 !important;
+                                            border-radius: 4px;
+                                            text-transform:uppercase;
+                                            box-shadow: 0 2px 12px -6px #00b8b1!important;">{{'btn.send_btn'|trans}}</button>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="sidebar_section" style=" padding:16px; ">
+                        
+                        <div class="sidebar_section_content" style=" padding-top:30px !important;">
+
+
+                            <div class="sidebar_title_container mb-3" >
+                                <h3  style="padding-top:20px; font-size: 18px; color: #505050; line-height: normal!important;">{{ 'sidebar_titles.title_1'|trans }}</h3>
+                            </div>                        
+                            <!-- Top Stories Slider -->
+                            <div class="sidebar_slider_container">
+                            {% for sideBarArticles in sideBarArticles %}
+                            {% if (app.request.getLocale()) == 'fr'  %} 
+                                <!-- Sidebar Post -->
+                                <div class="side_post" style="border-bottom: 1px solid #f0f0f0;
+                                margin-bottom: 20px; padding-bottom: 10px;
+                                ">
+                                    <a href="{{ path('app_article_show', { 'slug' : sideBarArticles.slug }) }}">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ sideBarArticles.image.AssetPath }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="article_title " style="margin-bottom: 10px;
+                                                padding-top: 0; 
+                                                width:100%;
+                                                height:35px;
+                                            
+                                                overflow: hidden;
+                                                text-overflow:ellipsis;
+                                                color: #3f3f3f;
+                                                font-weight: 700;">{{ sideBarArticles.title }}</div>
+                                                <small class="post_meta"><i class="fa fa-eye"></i> {{ sideBarArticles.seenCount }}<span style="color: #8d8d8d!important;">Publié le {{ sideBarArticles.date|date("m/d/Y")}}</span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {%  elseif (app.request.getLocale()) == 'en' %}
+                                    <!-- Sidebar Post -->
+                                    <div class="side_post" style="border-bottom: 1px solid #f0f0f0;
+                                margin-bottom: 20px; padding-bottom: 10px;
+                                ">
+                                    <a href="{{ path('app_article_show', { 'slug' : sideBarArticles.slug }) }}">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            <div class="side_post_image"><div><img src="{{ sideBarArticles.image.AssetPath }}" alt=""></div></div>
+                                            <div class="side_post_content">
+                                                <div class="article_title " style="margin-bottom: 10px;
+                                                padding-top: 0; 
+                                                width:100%;
+                                                height:35px;
+                                            
+                                                overflow: hidden;
+                                                text-overflow:ellipsis;
+                                                font-size:13px;color: #3f3f3f;
+                                                font-weight: 700;">{{ sideBarArticles.titleEn }}</div>
+                                                <small class="post_meta"><i class="fa fa-eye"></i> {{ sideBarArticles.seenCount }}<span style="color: #8d8d8d!important;">Published on {{ sideBarArticles.date|date("m/d/Y")}}</span></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endif %}                                 
+                            {% endfor %}
+
+
+
+
+
+                                <div class="widget-title-styling" style="padding-top:10px; margin-bottom:20px;">
+                                    <h3 class="widget-title">{{ 'sidebar_titles.title_2'|trans }}</h3>
+                                </div>
+
+                                {% for catalogue in catalogue %}
+                                {% if (app.request.getLocale()) == 'fr'  %} 
+                                <div class="side_post" style="
+                                margin-bottom: 20px; padding-bottom: 10px;
+                                ">
+                                    <a href="{{ path('app_catalogue_index', { 'slug' : catalogue.slug }) }}" style="border-bottom: 1px solid #f0f0f0;">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            
+                                            <div class="side_post_content" style="padding-left:unset;">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                padding-left:unset;
+                                                line-height: 135%!important; font-size:14px;color: #3f3f3f;
+                                                font-weight: 700;"><span class="fa fa-chevron-circle-right" style="margin-right:10px;"></span> {{ catalogue.name }}</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                {%  elseif (app.request.getLocale()) == 'en' %}
+                                <div class="side_post" style="
+                                margin-bottom: 20px; padding-bottom: 10px;
+                                ">
+                                    <a href="{{ path('app_catalogue_index', { 'slug' : catalogue.slug }) }}" style="border-bottom: 1px solid #f0f0f0;">
+                                        <div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+                                            
+                                            <div class="side_post_content" style="padding-left:unset;">
+                                                <div class="side_post_title" style="margin-bottom: 10px;
+                                                padding-top: 0;
+                                                padding-left:unset;
+                                                line-height: 135%!important; font-size:14px;color: #3f3f3f;
+                                                font-weight: 700;"><span class="fa fa-chevron-circle-right" style="margin-right:10px;"></span> {{ catalogue.nameEn }}</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                {% endif %}  
+
+                                {% endfor %}
+
+                                <div id="wp_subscribe-2" class="widget widget-item wp_subscribe">
+                                    <div id="wp-subscribe" class="wp-subscribe-wrap wp-subscribe wp-subscribe-1" >
+                                        <h4 class="title mb-3" style="text-transform: uppercase;">{{ 'sidebar_titles.title_3'|trans }}</h4>
+                                        <a class="btn submit" href="#newsletterForm" style="
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        line-height: 1;
+                                        padding-top: 20px;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        color: #f47555;
+                                        background: #fff;
+                                        -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+                                        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+                                        width: 100%;
+
+                                        margin: 0;
+                                        padding: 15px 0;
+                                        text-align: center;
+                                        text-indent: 10px;
+                                        border: none;
+                                        border-radius: 0;
+                                        ">{{ 'btn.subscribe_newsletter_btn'|trans }}</a>
+                                
+                                    </div>
+                                </div>
+                                <div class="widget-title-styling" style="padding-top:30px;">
+                                    <h3 class="widget-title">{{ 'sidebar_titles.title_4'|trans }}</h3>
+                                </div>
+                                <div class="mt-3">
+                                    <div id="fb-root">
+                                    <div class="fb-page" data-href="https://www.facebook.com/association.les.colombes" data-tabs="timeline" data-width="300" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/association.les.colombes" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/association.les.colombes">Association les colombes</a></blockquote></div>
+                                    </div>                                  
+                                </div>
+
+                                <div style="margin-top:30px; margin-bottom:30px;">
+                                    <img src="{{asset('images/WebiLearn-FR-Home2.jpg')}}" alt="" style="width:100%;">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+        </div>     
+    </div>
+
+
+ </div>
+
+
+{% endblock %}
+{% block javascript%}
+    <script>
+    $('#appbundle_review_article').val('{{entity.id}}')
+        initBlogSlider();
+        /* 
+        
+        16. Init Blog Slider
+        
+        */
+        
+        function initBlogSlider()
+        {
+            if($('.blog_slider').length)
+            {
+                var blogSlider = $('.blog_slider');
+                blogSlider.owlCarousel(
+                {
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',
+                    autoplay: true,
+                    loop:false,
+                    infinite:true,
+                    lazyload: true, 
+                    margin:20,
+                    dots: false,
+                    nav:false,
+                    autoHeight: true,
+                    autoplaySpeed: 600,
+                    responsive:
+                {
+                    0:{items:1},
+                    480:{items:1},
+                    768:{items:3},
+                    991:{items:3},
+                    1280:{items:3},
+                    1440:{items:3}
+                }
+                });
+        
+                trendsSlider.on('click', '.trends_fav', function (ev)
+                {
+                    $(ev.target).toggleClass('active');
+                });
+        
+                if($('.trends_prev').length)
+                {
+                    var prev = $('.trends_prev');
+                    prev.on('click', function()
+                    {
+                        trendsSlider.trigger('prev.owl.carousel');
+                    });
+                }
+        
+                if($('.trends_next').length)
+                {
+                    var next = $('.trends_next');
+                    next.on('click', function()
+                    {
+                        trendsSlider.trigger('next.owl.carousel');
+                    });
+                }
+            }
+        }
+    
+
+
+
+  $('.article_title').each(function() {
+            var maxchars = 60;
+            var seperator = '...';
+
+            if ($(this).text().length > (maxchars - seperator.length)) {
+                $(this).text($(this).text().substr(0, maxchars-seperator.length) + seperator);
+            }
+            });
+
+    </script>
+{% endblock %}

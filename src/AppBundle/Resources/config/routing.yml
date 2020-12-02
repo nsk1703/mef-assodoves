@@ -1,0 +1,38 @@
+app_home_page:
+    path: /
+    defaults: { _controller: AppBundle:Default:index }
+
+app_about_page:
+    path: /about
+    defaults: { _controller: AppBundle:Default:about }
+
+app_faq_page:
+    path: /faq
+    defaults: { _controller: AppBundle:Default:faq }
+
+
+app_legal_mention_page:
+    path: /legal-mentions
+    defaults: { _controller: AppBundle:Default:legalMentions }
+
+app_cgu_page:
+    path: /cgu
+    defaults: { _controller: AppBundle:Default:cgu }
+
+app_volonteer_page:
+    path: /volonteer/new
+    defaults: { _controller: AppBundle:Default:volonteer }
+
+
+app_thankyou_page:
+    path: /thankyou
+    defaults: { _controller: AppBundle:Default:thankyou }
+
+
+routingBlog:
+    resource: "@AppBundle/Resources/config/routing/article.yml"
+    prefix: /blog
+
+routingForm:
+    resource: "@AppBundle/Resources/config/routing/form.yml"
+    prefix: /form

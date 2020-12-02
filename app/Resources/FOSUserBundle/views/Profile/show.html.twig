@@ -1,0 +1,22 @@
+{% extends "layout/base.html.twig" %}
+
+
+{% block content %}
+
+
+
+    {% if app.request.hasPreviousSession %}
+        {% for type, messages in app.session.flashbag.all() %}
+            {% for message in messages %}
+                <div class="flash-{{ type }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+
+{% block fos_user_content %}
+{% include "@FOSUser/Profile/show_content.html.twig" %}
+
+{% endblock fos_user_content %}
+{% endblock %}

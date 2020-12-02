@@ -1,0 +1,8 @@
+app_cause_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Cause:index" }
+    methods:  GET
+
+app_cause_show:
+    path:     /{slug}
+    defaults: { _controller: "AppBundle:Cause:show" }

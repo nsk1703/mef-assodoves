@@ -1,0 +1,489 @@
+{% extends "layout/admin.html.twig" %}
+{% block content %}
+
+
+
+
+{% set month1 = 0 %}
+{% set month2 = 0 %}
+{% set month3 = 0 %}
+{% set month4 = 0 %}
+{% set month5 = 0 %}
+{% set month6 = 0 %}
+{% set month7 = 0 %}
+{% set month8 = 0 %}
+{% set month9 = 0 %}
+{% set month10 = 0 %}
+{% set month11 = 0 %}
+{% set month12 = 0 %}
+{% set totalDonations = 0 %}
+{% set totalArticleSeenCount = 0 %}
+
+{% for article in article %}
+{% set totalArticleSeenCount = totalArticleSeenCount + article.seenCount %}
+{% endfor %}
+
+{% for contribution in contribution %}
+  {% set totalDonations = totalDonations + contribution.info.amount %}
+  {% if contribution.date|date('y') == "now"|date('y') %}
+
+    {% if  contribution.date|date('F')  == "January" %}
+        {% set month1 = month1 + contribution.info.amount %}*
+       
+    {% elseif contribution.date|date('F')  == "Febuary" %}
+        {% set month2 = month2 + contribution.info.amount %}
+       
+    {% elseif contribution.date|date('F')  == "March" %}
+        {% set month3 = month3 + contribution.info.amount %}
+        
+    {% elseif contribution.date|date('F')  == "April" %}
+        {% set month4 = month4 + contribution.info.amount %}
+        
+    {% elseif contribution.date|date('F')  == "May" %}
+        {% set month5 = month5 + contribution.info.amount %}
+      
+    {% elseif contribution.date|date('F')  == "June" %}
+        {% set month6 = month6 + contribution.info.amount %}
+
+    {% elseif contribution.date|date('F')  == "July" %}
+        {% set month7 = month7 + contribution.info.amount %}
+
+    {% elseif contribution.date|date('F')  == "August" %}
+        {% set month8 = month8 + contribution.info.amount %}
+        
+    {% elseif contribution.date|date('F')  == "September" %}
+        {% set month9 = month9 + contribution.info.amount %}
+        
+    {% elseif contribution.date|date('F')  == "October" %}
+        {% set month10 = month10 + contribution.info.amount %}
+      
+    {% elseif contribution.date|date('F')  == "November" %}
+        {% set month11 = month11 + contribution.info.amount %}
+      
+    {% elseif contribution.date|date('F')  == "December" %}
+        {% set month12 = month12 + contribution.info.amount %}
+      
+
+    {% endif %}
+    
+  {% endif %}
+
+{% endfor %}
+      
+
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content" style="margin-bottom:-80px;">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>{{ article|length}}</h3>
+
+                <p>Post</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="{{path('admin_article_index')}}" class="small-box-footer">Plus d'infos <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>{{ contribution|length}}</h3>
+
+                <p>Dons</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+              <a href="{{path('admin_contribution_index')}}" class="small-box-footer">Plus d'info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>{{ volonteer|length}}</h3>
+
+                <p>Volontaires</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="{{path('admin_member_volonteer')}}" class="small-box-footer">Plus d'info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-lg-7 connectedSortable">
+
+
+          </section>
+          <!-- /.Left col -->
+          <!-- right col (We are only adding the ID to make the widgets sortable)-->
+          <section class="col-lg-5 connectedSortable">
+
+          </section>
+          <!-- right col -->
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+    <section class="content" >
+      <div class="container-fluid">
+          <div class="row" >
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title">Historique dons</h5>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+   
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="text-center">
+                        <strong>Dons:  
+                        Jan {{ "now"|date("Y") }}
+                          -  
+                        Dec {{ "now"|date("Y") }} </strong>
+                      </p>
+
+                      <div class="chart">
+                        <!-- Sales Chart Canvas -->
+                        <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
+                      </div>
+                      <!-- /.chart-responsive -->
+                    </div>
+                    <!-- /.col -->
+
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- ./card-body -->
+
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <!-- Left col -->
+            <div class="col-md-8">
+
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- DIRECT CHAT -->
+                  <div class="card direct-chat direct-chat-warning">
+                    <div class="card-header">
+                      <h3 class="card-title">Avis recents</h3>
+
+                      <div class="card-tools">
+                        <span data-toggle="tooltip" title="3 New Messages" class="badge badge-warning">3</span>
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-tool" data-toggle="tooltip" title="Contacts"
+                                data-widget="chat-pane-toggle">
+                          <i class="fas fa-comments"></i></button>
+                        <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <!-- Conversations are loaded here -->
+                      <div class="direct-chat-messages">
+                        {% for latestReviews in latestReviews %}
+                          <!-- Message. Default to the left -->
+                          <div class="direct-chat-msg">
+                            <div class="direct-chat-infos clearfix">
+                              <span class="direct-chat-name float-left">{{latestReviews.email}}</span>
+                              <span class="direct-chat-timestamp float-right">{{latestReviews.date|date("m/d/Y")}}</span>
+                            </div>
+                            <!-- /.direct-chat-infos -->
+                            <img class="direct-chat-img" src="{{asset('images/avatar.png')}}" alt="message user image">
+                            <!-- /.direct-chat-img -->
+                            <div class="direct-chat-text">
+                              {{latestReviews.content|raw}}
+                              <div>
+                                <i>dans <a href="{{ path('admin_article_edit', { 'id' : latestReviews.article.id }) }}">{{latestReviews.article.title}}</a></i> 
+                              </div>
+                            </div>
+                            
+                            <!-- /.direct-chat-text -->
+                          </div>
+                        <!-- /.direct-chat-msg -->
+
+                        {% endfor %}
+                      
+
+                      </div>
+                      <!--/.direct-chat-messages-->
+
+
+                    </div>
+                    <!-- /.card-body -->
+                    <!-- /.card-body -->
+                    <div class="card-footer text-center">
+                      <a href="{{path('admin_review_index')}}">Voir tous les avis</a>
+                    </div>
+                    <!-- /.card-footer -->
+                    <!-- /.card-footer-->
+                  </div>
+                  <!--/.direct-chat -->
+                </div>
+                <!-- /.col -->
+
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+
+              <!-- TABLE: LATEST ORDERS -->
+              <div class="card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">Contributions recents</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                      <tr>
+                        <th>Utilisateur</th>
+                        <th>Montant</th>
+                        
+                        <th>Date</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {% for latestContribution in latestContribution %}
+                        <tr>
+                          <td>{{latestContribution.info.userEmail}}</td>
+                          <td>{{latestContribution.info.amount}} €</td>
+                          <td>
+                            <div class="sparkbar" data-color="#00a65a" data-height="20">{{latestContribution.date|date("m/d/Y")}}</div>
+                          </td>
+                        </tr>
+                      {% endfor %}
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer text-center">
+                  <a href="{{path('admin_contribution_index')}}" class="uppercase">Voir tous les dons</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-4">
+              <!-- Info Boxes Style 2 -->
+              <div class="info-box mb-3 bg-warning">
+                <span class="info-box-icon"><i class="far fa-heart"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Dons</span>
+                  <span class="info-box-number">{{totalDonations}} €</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-success">
+                <span class="info-box-icon"><i class="far fa-envelope"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Newsletter</span>
+                  <span class="info-box-number">{{email|length}}</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-danger">
+                <span class="info-box-icon"><i class="fa fa-eye"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Visites du site</span>
+                  <span class="info-box-number">{{totalArticleSeenCount}}</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+              <div class="info-box mb-3 bg-info">
+                <span class="info-box-icon"><i class="far fa-user"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Donateur</span>
+                  <span class="info-box-number">{{contribution|length}}</span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+
+
+              <!-- PRODUCT LIST -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Articles recents</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <ul class="products-list product-list-in-card pl-2 pr-2">
+                  {% for latestArticles in latestArticles %}
+                    <li class="item">
+                      <div class="product-img">
+                        <img src="{{latestArticles.image.AssetPath}}" alt="Product Image" class="img-size-50" style="border-radius: 30px;">
+                      </div>
+                      <div class="product-info">
+                        <a href="{{ path('admin_article_edit', { 'id' : latestArticles.id }) }}" class="product-title">{{latestArticles.title}}
+                          <span class="badge badge-warning float-right"><span class="fa fa-eye"></span> {{latestArticles.seenCount}}</span></a>
+                       
+                      </div>
+                    </li>                    
+                  {% endfor %}
+                  </ul>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer text-center">
+                  <a href="{{path('admin_article_index')}}" class="uppercase">Voir tout les articles</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>        <!-- Main row -->
+      </div>
+    </section>
+    <input type="hidden" name="valueMonth1" class="valueMonth1" value="{{month1}}">
+    <input type="hidden" name="valueMonth2" class="valueMonth2" value="{{month2}}">
+    <input type="hidden" name="valueMonth3" class="valueMonth3" value="{{month3}}">
+    <input type="hidden" name="valueMonth4" class="valueMonth4" value="{{month4}}">
+    <input type="hidden" name="valueMonth5" class="valueMonth5" value="{{month5}}">
+    <input type="hidden" name="valueMonth6" class="valueMonth6" value="{{month6}}">
+    <input type="hidden" name="valueMonth7" class="valueMonth7" value="{{month7}}">
+    <input type="hidden" name="valueMonth8" class="valueMonth8" value="{{month8}}">
+    <input type="hidden" name="valueMonth9" class="valueMonth9" value="{{month9}}">
+    <input type="hidden" name="valueMonth10" class="valueMonth10" value="{{month10}}">
+    <input type="hidden" name="valueMonth11" class="valueMonth11" value="{{month11}}">
+    <input type="hidden" name="valueMonth12" class="valueMonth12" value="{{month12}}">
+
+{% endblock %}
+
+{% block javascript %}
+
+<script>
+    var salesChartCanvas = $('#salesChart').get(0).getContext('2d')
+
+    var salesChartData = {
+      labels  : ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui', 'Juil','Sep','Oct','Nov','Dec'],
+      datasets: [
+        {
+          label               : 'Digital Goods',
+          backgroundColor     : 'rgba(60,141,188,0.9)',
+          borderColor         : 'rgba(60,141,188,0.8)',
+          pointRadius          : false,
+          pointColor          : '#3b8bba',
+          pointStrokeColor    : 'rgba(60,141,188,1)',
+          pointHighlightFill  : '#fff',
+          pointHighlightStroke: 'rgba(60,141,188,1)',
+          data                : [$('.valueMonth1').val(), $('.valueMonth2').val(), $('.valueMonth3').val(), $('.valueMonth4').val(), $('.valueMonth5').val(), $('.valueMonth6').val(), $('.valueMonth7').val(),$('.valueMonth8').val(),$('.valueMonth9').val(),$('.valueMonth10').val(),$('.valueMonth11').val(),$('.valueMonth12').val()]
+        },
+      ]
+    }
+
+    var salesChartOptions = {
+      maintainAspectRatio : false,
+      responsive : true,
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          gridLines : {
+            display : false,
+          }
+        }],
+        yAxes: [{
+          gridLines : {
+            display : false,
+          }
+        }]
+      }
+    }
+
+    // This will get the first returned node in the jQuery collection.
+    var salesChart = new Chart(salesChartCanvas, { 
+        type: 'line', 
+        data: salesChartData, 
+        options: salesChartOptions
+      }
+    )
+</script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout/base.html.twig" %}
+{% block content %}
+    <div class="col-12 text-center" style="margin-top:10%; margin-bottom:30%;">
+
+      <div class="container main_container">
+      <h2 class="">Thank You!</h2>
+      
+          <div class=" col" >
+            <div class="row text-center">
+                <div class="col">  
+                  <span class="icon" style=" margin-bottom: 2em;display: block;">  
+                    <i class="fa fa-check-circle" style="color:#51a042; display: inline-block; font-size: 40px;"></i>
+                </span>
+                </div>       
+            </div>  
+            <div class="col text-center"> 
+
+                <div class="col">
+                  <div style="font-size:18px; margin-bottom:10px;">Payement validé avec succès!!</div>
+                </div>
+              
+                  <p class="" style="font-size:13px;  "> 
+                    Chez genereux donateur, merci pour votre soutien à traver cet don <br/>
+                    Grace à votre don nous pourrons d'avantage aider les enfant necéssitue de toute race dans le monde
+                    à pouvoir avoir une meilleur conditions d'école pour ainsi contribuer à lutter contre la pauvreté
+                    dans le monde
+                  </p>
+
+                  <a href="{{path('app_article_index')}}" class="btn">Aller sur notre blog d'actualité</a>           
+
+          </div>
+            
+
+              
+        </div>
+      
+
+      </div>
+
+    </div>
+
+{% endblock %}
+
+{% block javascript%}
+
+{% endblock %}

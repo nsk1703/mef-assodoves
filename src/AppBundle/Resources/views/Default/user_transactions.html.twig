@@ -1,0 +1,85 @@
+{% extends "layout/base.html.twig" %}      
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}  
+{% block content %}
+
+<div class="page-margin-modif" style="margin-top:30px; margin-bottom:180px;">
+	<div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb" style="margin-top:20px; margin-bottom:20px;">
+                <ol class="breadcrumb" style="background-color: unset;">
+                    
+                    <li class="breadcrumb-item"><a href="{{path('app_home_page')}}">{{ 'nav.link_1'|trans }}</a></li>
+                    <li class="breadcrumb-item"><a href="{{path('fos_user_profile_show')}}">{{ 'nav.link_8'|trans }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #3f3f3f; font-weight:500;">{{ 'nav.link_9'|trans }}</li>
+                </ol>
+            </nav>
+        </div>
+		<div class="row">
+		    <div class="col-lg-12 Ccol-12">
+                <h2 style="font-size:20px;">{{ 'nav.link_9'|trans }}</h2>
+                <h3 style="font-size: 18px; margin-top:30px; margin-bottom:30px;">{{ 'nav.link_9.1'|trans }} <span class="badge badge-pill badge-dark">{{entity|length}}</span></h3>
+                <table class="table " id="dataTable" style="width:100%;">
+                    <thead >
+                      <tr>
+                        <th>#</th>
+                        <th>{{ 'table_titles.title_1'|trans }}</th>
+                        <th>{{ 'table_titles.title_2'|trans }}</th>
+                        <th>Date</th>
+                        <th style="width:10px;">Action</th>
+                      </tr>
+                    </thead>
+                {% set count = 0 %}
+                 
+                  
+                <tbody>
+                {% for entity in entity|reverse %}  
+                {% set count = count + 1 %}          
+                    <tr>
+                        <td >{{count}}</td>
+                        <td><span style="font-weight:500;">{{ 'table_titles.title_3'|trans }} {{entity.info.membership}}</span></td>
+                        <td><span style="font-weight:500;">{{entity.info.amount}} €</span></td>
+                        <td><span style="font-weight:500;">{{entity.date|date("m/d/Y")}}</span> </td>
+                        <td><a href="{{ path('app_user_order_print', { 'id' : entity.id }) }}" class="btn btn-primary" style="cursor: pointer; background-color: #17a2b8;
+                            border-color: #17a2b8; height:unset; padding:2px 12px; font-size:13px;
+                            color: #fff;"> {{ 'btn.print'|trans }}</a></td>
+                    </tr>
+                    
+                {% endfor %}
+                </tbody>
+            </table>
+
+            </div>
+	    </div>		
+	</div>
+</div>
+{% endblock %}
+
+
+{% block javascript%}
+    <!-- Page level plugins -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+
+    <script>
+    // Call the dataTables jQuery plugin
+
+    $('#dataTable').DataTable({
+        "processing": false,
+        "lengthChange": false,
+        "searching": false,
+        "info": true,
+        "ordering": true,        
+        "autoWidth": false,
+        "responsive": true,
+        order: [
+            [1, 'desc']
+        ]
+    });
+
+  </script>
+{% endblock %}

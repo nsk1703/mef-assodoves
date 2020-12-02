@@ -1,0 +1,37 @@
+admin_catalogue_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Catalogue:index" }
+    methods:  GET
+
+admin_catalogue_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Catalogue:dataTableData" }
+    options:
+        expose: true
+
+
+admin_catalogue_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:Catalogue:getItemData" }
+    options:
+        expose: true
+
+
+admin_catalogue_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Catalogue:new" }
+    options:
+        expose: true
+   
+
+admin_catalogue_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "AdminBundle:Catalogue:edit" }
+    options:
+        expose: true
+
+admin_catalogue_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Catalogue:delete" }
+    options:
+        expose: true

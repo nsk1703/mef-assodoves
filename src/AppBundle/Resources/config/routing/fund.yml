@@ -1,0 +1,5 @@
+app_fund_checkout_page:
+    path:     /checkout/status/{id}
+    defaults: { _controller: AppBundle:Fund:checkout }  
+
+

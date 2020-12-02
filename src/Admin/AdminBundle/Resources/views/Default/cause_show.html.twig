@@ -1,0 +1,202 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+  {% set totalDonation = 0 %}
+  {% set AmountNeededPercentage = 0 %}
+
+
+ <!-- Content Header (Page header) -->
+ <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1></h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Projets</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section> 
+
+  <!-- Data Table area Start-->
+  <section class="content">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+          <div class="col-12" style="margin-bottom:10px;">
+            <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                  Information sur le projet
+                </div>
+                <div  style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+                  <div style="width:100%; height:250px; margin-bottom:10px; background-image:url('{{ cause.image.AssetPath }}'); background-size:cover; background-repeat: no-repeat;  background-position: center center;"></div>
+                   <p><b>{{ cause.title }}</b></p>
+                   <p><b>{{ cause.goal }}</b></p>
+                  <p>{{ cause.content|raw }}</p>
+
+                 
+                </div>
+                
+            </div>
+          </div>
+
+          <div class="col-12" style="margin-bottom:10px;">
+            <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                    Participants <span class="badge badge-danger">8 New Members</span>
+                </div>
+                <div  style="padding-top:16px; padding-bottom:30px; padding-left:10px; padding-right:10px;">
+                  <ul class="users-list clearfix">
+                      <li>
+                        <img src="{{asset('images/avatar.jpg')}}"  alt="User Image">
+                        <a class="users-list-name" href="#">Alexander Pierce</a>
+                        <span class="users-list-date">Today</span>
+                      </li>
+                      <li>
+                        <img src="{{asset('images/avatar2.jpg')}}" alt="User Image">
+                        <a class="users-list-name" href="#">Norman</a>
+                        <span class="users-list-date">Yesterday</span>
+                      </li>
+                      <li>
+                        <img src="{{asset('images/avatar3.jpg')}}" alt="User Image">
+                        <a class="users-list-name" href="#">Jane</a>
+                        <span class="users-list-date">12 Jan</span>
+                      </li>
+                      <li>
+                        <img src="{{asset('images/avatar04.jpg')}}"  alt="User Image">
+                        <a class="users-list-name" href="#">John</a>
+                        <span class="users-list-date">12 Jan</span>
+                      </li>
+                      <li>
+                        <img src="{{asset('images/avatar5.jpg')}}" alt="User Image">
+                        <a class="users-list-name" href="#">Jane</a>
+                        <span class="users-list-date">12 Jan</span>
+                      </li>
+                    </ul>
+                </div>
+              
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="col-12" style="margin-bottom:10px;">
+              <div class="info-box bg-gradient-success">
+                <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">Fonds collectées</span>
+
+                  <span class="info-box-number"> {{ totalDonation }} € sur {{ cause.amount }} €</span>
+                  {% set AmountNeededPercentage = ( totalDonation / cause.amount) * 100 %}
+                  <div class="progress">
+                    <div class="progress-bar" style="width: {{ AmountNeededPercentage|round() }}%"></div>
+                  </div>
+                  <span class="progress-description" style="font-size:12px;">
+                    {{ donation|length }} participants
+                  </span>
+                </div>
+
+              </div>
+          </div>
+
+<style>
+  .cause_detail_info ul{
+    padding-top:16px;
+    padding-bottom:30px; 
+    list-style:none;
+    padding-inline-start: 0px;
+
+  }
+  .cause_detail_info ul li i{
+      color: #dadce0; 
+      margin-right:16px;
+
+  }  
+  .cause_detail_info ul li{
+    border-bottom: 1px solid #dadce0; 
+      padding-left:16px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size:13px;
+  }   
+  .cause_detail_info ul li:last-child{
+    border-bottom: 0px solid #dadce0; 
+      padding-bottom: 0px;
+  }  
+</style>
+
+
+          <div class="col-12" style="margin-bottom:10px;">
+            <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:5px;">
+                    Détails du projet.
+                </div>
+                <div  class="cause_detail_info">
+                    <ul>
+                      <li><i class="fa fa-clock"></i> Publié le {{ cause.date|date("m/d/Y") }}</li>
+                      <li><i class="fa fa-map"></i> Yaoundé Cameroun</li>
+                      <li ><i class="fa fa-tags"></i>{{ cause.projectCategory.name }}</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="col-12" style="margin-bottom:10px;">
+            <a href="" data-toggle="modal" class="btn btn-primary" style="margin-bottom:10px; background-color: #17a2b8; border-color: #17a2b8; width:100%; color:white; font-weight:600; font-size:14px;">Modifier</a>
+           
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+
+{% endblock %}
+
+{% block javascript %}
+    <!-- Page level plugins -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+
+
+    <script>
+    // Call the dataTables jQuery plugin
+
+    $('#dataTable').DataTable({
+        "processing": true,
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+        order: [
+            [0, 'desc']
+        ]
+    });
+
+  
+
+  </script>
+
+
+
+{% endblock %}

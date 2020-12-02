@@ -1,0 +1,436 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+<link href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+
+
+    <div class="breadcomb-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="breadcomb-list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="breadcomb-wp">
+                                        <div class="breadcomb-icon">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="breadcomb-ctn">
+                                            <h2 style="text-transform:uppercase">Auteurs</h2>
+                                            <p>Auteurs d'ouvrage</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+                                    <div class="breadcomb-report">
+                                        <button data-toggle="modal" data-target="#newEntityModal" data-placement="left" title="" class="btn waves-effect" data-original-title="Ajouter un catalogue"><i class="fa fa-pencil-alt"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="data-table-list">
+                        <div class="basic-tb-hd">
+                            <h2>Liste des auteurs</h2>
+                            
+                        </div>
+                        <div class="">
+                            <table id="dataTable" class="table table-striped" style="width:100%;">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                        
+                                        <th style="width:80px;">Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+
+
+{% endblock %}
+{% block modals %}
+
+<div class="modal fade show" id="newEntityModal" tabindex="-1" role="dialog" aria-labelledby="newEntityModalLabel" style="display: none;">
+		<div class="modal-dialog modal modal-dialog-centered" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newEntityModalLabel" style="font-size: 15px; color: black;">Ajoutez un auteur</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="cursor:pointer">
+          <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="">
+              <form action="{{ path('admin_author_new')}}" method="POST" id="newEntityForm" enctype="multipart/form-data">	
+              <div class="">
+                <div class="col-12" style="overflow: auto; padding:16px;">
+
+                      <div class="row">
+                            
+                                    <div class="form-group col-12">
+                                        <label class="fileContainer required" for="appbundle_author_image_file" style="
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        background-position: center center;"> 
+                                          
+                                        <div class="text-center default_file_input_message" style="position:relative; top:50px;">
+                                            <span>Drop files here to upload</span>                                              
+                                        </div>
+                      
+                                        </label>                          
+                                
+                                        {{ form_errors(form.image.file) }}
+                                        {{ form_widget(form.image.file) }}
+            
+                                                 
+                                        
+                                    </div>                            
+            
+                                    <div class="form-group col-12">
+                                        
+                                
+                                        {{ form_errors(form.image.name) }}
+                                        {{ form_widget(form.image.name) }}
+                                                        
+                                    </div> 
+
+                            <div class="form-group col-12">
+
+                                    {{ form_label(form.name, "Nom de l'auteur*", {'label_attr': {'style': 'color: gray; font-size:12px; margin-bottom:-5px; margin-top:10px;'}}) }}
+                                   <div class="nk-int-st">
+                                       {{ form_errors(form.name) }}
+                                       {{ form_widget(form.name) }}
+                                   
+                                   </div>
+                               </div>                       
+                               
+
+                        {{ form_widget(form) }}
+
+                      </div>
+
+                </div>
+              
+                  
+            </div>
+          
+            <div class="modal-footer">
+            
+              <button type="submit" class="btn btn-primary new_catalogue" style="width: 100%; height:40px; text-transform: uppercase; font-size: 12px; font-weight: 600px; color: #fff;">Enregistrer</button>
+            </div>
+
+        
+        </form>	
+        
+
+        </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="editEntityModal" tabindex="-1" role="dialog" aria-labelledby="editEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editEntityModalLabel" style="font-size: 15px; color: black;">modifier un catalogue</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="cursor:pointer">
+          <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="">
+              <form  method="POST" id="editEntityForm">	
+              <div class="shipping-place_modal">
+                <div class="col-12" style=" padding: 16px; ">
+
+                      <div class="row">                        
+
+                            <div class="form-group col-12">
+                                    <label style="
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-position: center center;" for="appbundle_edit_author_image" class=" fileEditContainer">
+                                    
+                                    
+                                    </label>
+                                    {{ form_errors(edit_form.image) }}
+                                    {{ form_widget(edit_form.image) }}
+        
+                                             
+                                    
+                                </div>                            
+        
+                                <div class="form-group">
+                                    
+                            
+                                    {{ form_errors(edit_form.image.name) }}
+                                    {{ form_widget(edit_form.image.name) }}
+                                                    
+                                </div>                          
+                                           
+
+
+
+
+
+
+                        <div class="form-group col-12">
+
+                             {{ form_label(edit_form.name, "Nom du catalogue*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                            <div class="nk-int-st">
+                                {{ form_errors(edit_form.name) }}
+                                {{ form_widget(edit_form.name) }}
+                            
+                            </div>
+                        </div>                       
+                        
+
+                        <div class="form-group col-12">
+                            {{ form_label(edit_form.content, "Nom du catalogue en anglais*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                            <div class="nk-int-st">
+                                {{ form_errors(edit_form.content) }}
+                                {{ form_widget(edit_form.content) }}
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="form-group col-12">
+                            {{ form_label(edit_form.content_en, "Nom du catalogue en anglais*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                            <div class="nk-int-st">
+                                {{ form_errors(edit_form.content_en) }}
+                                {{ form_widget(edit_form.content_en) }}
+                            </div>
+                            
+                        </div>
+
+
+
+
+
+
+                        {{ form_widget(edit_form) }}
+
+                      </div>
+
+                </div>
+              
+                  
+            </div>
+          
+            <div class="modal-footer">
+            
+              <button type="submit" class="btn btn-primary new_catalogue" style="width: 100%; height:40px; text-transform: uppercase; font-size: 12px; font-weight: 600px; color: #fff;">Enregistrer</button>
+            </div>
+
+        
+        </form>	
+        
+
+        </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel" style="font-size: 15px; color: black;">Supprimer un catalogue</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="cursor:pointer">
+          <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="">
+            <form id="deleteEntityForm" action="{{ path('admin_author_delete')}}" method="post">		
+              <div class="shipping-place_modal">
+                <div class="col-12" style=" padding: 16px;  overflow: auto; ">
+
+                      <div class="row text-justify">
+                          <div class="col-12">
+                            Vous êtes sur le point de supprimer le catalogue <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa supression complète et irrevocable de la base de données
+                          </div>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+          
+            <div class="modal-footer">
+            
+              <button type="submit" class="btn btn-primary" style="width: 100%; height:40px; text-transform: uppercase; font-size: 12px; font-weight: 600px; color: #fff;">Supprimer</button>
+            </div>
+
+
+          </form>	
+        
+
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block javascript %}
+
+  <!-- Page level plugins -->
+  <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+  <script>
+  // Call the dataTables jQuery plugin
+  $(document).ready(function() {
+    $('#dataTable').DataTable({
+        "processing": true,
+        "ajax": Routing.generate('admin_author_dataTable_data'),
+        "columns": [
+          { "data": "name" },
+          { "data": "id",
+                render : function(data, type, row) {
+                  return '<div class="btn-group">'+
+                          '<button type="button" class="btn notika-btn-teal waves-effect">Action</button>'+
+                          '<button type="button" class="btn notika-btn-teal waves-effect dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                              '<span class="sr-only">Toggle Dropdown</span>'+
+                          '</button>'+
+                          '<div class="dropdown-menu">'+
+                              '<a class="dropdown-item" href="/author/show/'+data+'" style="cursor:pointer;">'+
+                                '<span class="fa fa-eye fa-fw mr-2 text-gray-400"></span> Voir'+
+                              '</a>'+
+                              '<a class="dropdown-item" onclick="openEditModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-edit fa-fw mr-2 text-gray-400"></span> Modifier'+
+                              '</a>'+
+                              '<a class="dropdown-item" onclick="openDeletModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-trash fa-fw mr-2 text-gray-400"></span> Suppr'+
+                              '</a>'+
+                            
+                          '</div>'+
+                        '</div>'
+              }    
+          
+           },
+          ],
+        order: [
+            [0, 'desc']
+        ]
+    });
+  });
+
+
+//open edit modal form
+function openEditModal(author){
+   
+   $.ajax({
+       type: 'get', 
+       url: Routing.generate('admin_author_item_data', {id: author}),
+       success: function(data) {
+       $("#appbundle_edit_catalogue_name").val(data.name); 
+       $('.fileEditContainer').css('background-image', 'url(' +data.image_path+ ')');
+       $('#editEntityForm').attr('action', '/author/edit/' +data.id);
+       }
+   }).done(function(data){ 
+           $('#editEntityModal').modal('show');
+    });
+
+}
+
+//open edit modal form
+function openDeletModal(author){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_author_item_data', {id: author}),
+     success: function(data) {
+       $( "#appbundle_delete_author_id" ).val(data.id);   
+       $(".entity_name").text(data.name); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+
+function readURL(input) 
+  {
+  
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function(e){
+        $('.fileContainer').css('background-image', 'url(' + e.target.result+ ')');          
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  function readEditURL(input) 
+  {
+  
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+  
+      reader.onload = function(e) {
+        $('.fileEditContainer').css('background-image', 'url(' + e.target.result+ ')');
+        
+      }
+  
+      reader.readAsDataURL(input.files[0]);
+    }
+  }  
+
+  $('#appbundle_author_image_file').change(function(e){
+      readURL(this);
+      var fileName = e. target. files[0]. name;
+      $( "#appbundle_author_image_name" ).val( fileName );
+      $('.default_file_input_message').hide();
+  });
+
+
+  $('#appbundle_edit_catalogue_icon_file').change(function(e){
+       readEditURL(this);
+       var fileName = e. target. files[0]. name;
+      $( "#appbundle_edit_author_image_name" ).val( fileName );
+      
+  });
+
+
+
+
+
+
+  </script>
+
+{% endblock %}

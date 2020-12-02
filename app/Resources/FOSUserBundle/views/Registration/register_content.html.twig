@@ -1,0 +1,144 @@
+
+
+<style>
+body{
+	background-color: #f8f9f9;
+}
+
+</style>
+
+
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="page-margin-modif" style="margin-top:50px; margin-bottom:180px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-12">
+				<div class="card" style=" background-color: #fff;
+			border-radius:4px; margin-bottom:30px;
+				box-shadow: 0px 3px 6px 1px rgba(0,0,0,.07);">
+
+					<div "card-body" style="padding: 30px; ">
+						<h2 style="font-size: 22px;
+						font-weight: 700;
+						line-height: 26px;
+						color: #00b8b1;
+						margin-top: 0;">Sign Up</h2>
+						<p class="subHead marB20">
+							Please provide your Email and Password
+						</p>
+						{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'commonView'}}) }}
+							<div class="form-group">
+								{{ form_label(form.email, "Email", {'label_attr': {'class': ''}}) }}
+								{{ form_errors(form.email) }}
+								{{ form_widget(form.email, {'attr': {'class':'form-control', 'placeholder':'Email address'}}) }}
+							
+						  	</div>
+							
+							<div class="form-group">
+								{{ form_label(form.plainPassword.first, "Password", {'label_attr': {'class': ''}}) }}
+								{{ form_errors(form.plainPassword.first) }}
+								{{ form_widget(form.plainPassword.first, {'attr': {'class':'form-control', 'placeholder':'Password'}}) }}
+
+						  	</div>
+							<div class="form-group">
+								{{ form_label(form.plainPassword.second, "R-Type password", {'label_attr': {'class': ''}}) }}
+								{{ form_errors(form.plainPassword.second) }}
+								{{ form_widget(form.plainPassword.second, {'attr': {'class':'form-control', 'placeholder':'Confirmer le mot de passe'}}) }}
+								
+						  	</div>
+
+							{{ form_rest(form) }} 
+							{{ form_widget(form) }} 
+							
+
+
+							
+							<button class="btn " type="submit"  style="font-size: 13px !important;
+						  background-color: #00b8b1;
+						  padding: 15px 30px !important;
+							  font-weight: 500 !important;
+							  border-radius: 4px;
+							  text-transform: uppercase;
+							  border:none;
+							  color:#fff;
+							  font-weight:500;
+							  font-size:13px;
+						  border-radius:4px;
+						  box-shadow: 0 2px 12px -6px #00b8b1!important;">Sign Up</button>
+							
+						
+						
+						{{ form_end(form) }}
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-lg-4 col-12">
+				<div class="card mb-3" style="background-color: #fff;
+				padding: 30px; border-radius:4px;
+				text-align: center; box-shadow: 0px 1px 12px 1px rgba(50,69,76,.1);">
+					<div class="card-body">
+					<h5 class="card-title mb-3" style="font-size: 15px;
+					font-weight: 700;
+					line-height: 20px;
+					color: #3e4153;
+					
+					margin: 0;">Already Registered?</h5>
+					
+					<a href="{{ path('fos_user_security_login') }}" class="card-link"
+					style="font-size: 13px !important;
+					background-color: #00b8b1;
+					padding: 10px 20px !important;
+						font-weight: 500 !important;
+						border-radius: 4px;
+						text-transform: uppercase;
+						border:none;
+						color:#fff;
+						font-weight:500;
+						font-size:13px;
+					border-radius:4px;
+					box-shadow: 0 2px 12px -6px #00b8b1!important;
+					">Sign In</a>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+

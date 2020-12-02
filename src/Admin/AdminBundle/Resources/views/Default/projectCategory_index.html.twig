@@ -1,0 +1,280 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Catalogue de projects</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Catalogues de projets</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+  <!-- Data Table area Start-->
+  <section class="content">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                      <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                          <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+                      </div>
+                          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+                            <div class="data-table-area">
+                              <table id="dataTable" class="table table-striped" style="width:100%;">
+                                  <thead>
+                                      <tr>
+                                          <th>Nom </th>
+                                          <th>Nom en anglais</th>
+                                          <th>Créé le</th>                                        
+                                          <th class="action_table_btn">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody><tr></tr></tbody>                                
+                              </table>
+                            </div>
+                            </div>
+                            <div class="form-footer" style="border-top: 1px solid #dadce0; padding-top:10px; padding-bottom:10px;">
+                              <div class="text-right" style="padding-left:16px; padding-right:16px;">
+                                  <a href="#newEntityModal" data-toggle="modal" class="btn newEtityModal" style="border:none; color: #1a73e8; font-weight:600; font-size:14px;">Ajouter <i class="fa fa-plus-circle"></i>    </a>
+                              </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+
+{% endblock %}
+{% block modals %}
+
+<div class="modal fade show" id="newEntityModal" tabindex="-1" role="dialog" aria-labelledby="newEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newEntityModalLabel">Ajoutez un catalogue de projet</h5>
+        </div>
+              <form action="{{ path('admin_projectCategory_new')}}" method="POST" id="newEntityForm" enctype="multipart/form-data">	
+                <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+
+                  <div  class="form-content" style="padding-bottom:10px; padding-top:10px;">
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(form.name, "Nom du catalogue*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(form.name) }}
+                              {{ form_widget(form.name) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                       
+                          
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(form.name_en, "Nom du catalogue*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(form.name_en) }}
+                              {{ form_widget(form.name_en) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                                             
+          
+                    {{ form_widget(form) }}
+                  </div>
+ 
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+                  <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Enregistrer</button>
+                </div>
+        
+        </form>	
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="editEntityModal" tabindex="-1" role="dialog" aria-labelledby="editEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editEntityModalLabel">Modifier le catalogue</h5>
+        </div>
+              <form action="" method="POST" id="editEntityForm" enctype="multipart/form-data">	
+                <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+
+                  <div  class="form-content" style="padding-bottom:10px; padding-top:10px;">
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.name, "Nom du catalogue*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.name) }}
+                              {{ form_widget(edit_form.name) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                       
+                          
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(form.name_en, "Nom du catalogue*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.name_en) }}
+                              {{ form_widget(edit_form.name_en) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                                             
+          
+                    {{ form_widget(edit_form) }}
+                  </div>
+ 
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+                  <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Enregistrer</button>
+                </div>
+        
+        </form>	
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression du catalogue</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_catalogue_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de supprimer le catalogue <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa supression complète et irreversive dans la base de données
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+            <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block javascript %}
+
+  <!-- Page level plugins -->
+  <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+  <script>
+  // Call the dataTables jQuery plugin
+  $(document).ready(function() {
+    $('#dataTable').DataTable({
+        "processing": true,
+        "ajax": Routing.generate('admin_projectCategory_dataTable_data'),
+        "columns": [
+          { "data": "name" },
+          { "data": "name_en" },
+          { "data": "date" },
+          { "data": "id",
+                render : function(data, type, row) {
+                  return '<div class="btn-group">'+
+                          '<button type="button" class="btn btn-primary">Action</button>'+
+                          '<button type="button" class="btn btn-primary waves-effect dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                              '<span class="sr-only">Toggle Dropdown</span>'+
+                          '</button>'+
+                          '<div class="dropdown-menu">'+
+                              '<a class="dropdown-item" onclick="openEditModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-edit fa-fw mr-2 text-gray-400"></span> Modifier'+
+                              '</a>'+
+                              '<a class="dropdown-item" onclick="openDeletModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-trash fa-fw mr-2 text-gray-400"></span> Suppr'+
+                              '</a>'+
+                            
+                          '</div>'+
+                        '</div>'
+              }    
+          
+           },
+          ],
+        order: [
+            [0, 'desc']
+        ]
+    });
+  });
+
+
+//open edit modal form
+function openEditModal(id){
+   
+   $.ajax({
+       type: 'get', 
+       url: Routing.generate('admin_projectCategory_item_data', {id: id}),
+       success: function(data) {
+       $("#appbundle_edit_projectCategory_name").val(data.name); 
+       $('#appbundle_edit_projectCategory_name_en').val(data.name_en);
+       $('#editEntityForm').attr('action', '/catalogue-project/edit/' +data.id);
+       }
+   }).done(function(data){ 
+           $('#editEntityModal').modal('show');
+    });
+
+}
+
+//open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_projectCategory_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_delete_projectCategory_id" ).val(data.id);   
+       $(".entity_name").text(data.name); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+
+  </script>
+
+{% endblock %}

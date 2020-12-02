@@ -1,0 +1,1108 @@
+[20-Sep-2020 23:52:45 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/icheck...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[20-Sep-2020 23:52:45 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[20-Sep-2020 23:52:46 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/easing...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[20-Sep-2020 23:53:21 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[20-Sep-2020 23:53:21 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:00:32 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:16:07 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:16:07 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:16:07 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:18:26 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Type error: Argument 1 passed to Symfony\Component\Form\FormRenderer::searchAndRenderBlock() must be an instance of Symfony\Component\Form\FormView, null given, called in /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php on line 75 in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Form/FormRenderer.php:131
+Stack trace:
+#0 /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php(75): Symfony\Component\Form\FormRenderer->searchAndRenderBlock(NULL, 'label', Array)
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(405): __TwigTemplate_bafee7553a0cb3c5b801ab3f85817f7f829b58616980be45ef8f508e4194d3f6->doDisplay(Array, Array)
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 /home/c1462208c/public_html/var in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:19:11 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Type error: Argument 1 passed to Symfony\Component\Form\FormRenderer::searchAndRenderBlock() must be an instance of Symfony\Component\Form\FormView, null given, called in /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php on line 75 in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Form/FormRenderer.php:131
+Stack trace:
+#0 /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php(75): Symfony\Component\Form\FormRenderer->searchAndRenderBlock(NULL, 'label', Array)
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(405): __TwigTemplate_bafee7553a0cb3c5b801ab3f85817f7f829b58616980be45ef8f508e4194d3f6->doDisplay(Array, Array)
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 /home/c1462208c/public_html/var in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:19:14 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: Type error: Argument 1 passed to Symfony\Component\Form\FormRenderer::searchAndRenderBlock() must be an instance of Symfony\Component\Form\FormView, null given, called in /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php on line 75 in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Form/FormRenderer.php:131
+Stack trace:
+#0 /home/c1462208c/public_html/var/cache/prod/twig/b6/b6525e2eeb067a463edbb33bfb7f9b7d9b34642509b72f38827bd278ff1eb20d.php(75): Symfony\Component\Form\FormRenderer->searchAndRenderBlock(NULL, 'label', Array)
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(405): __TwigTemplate_bafee7553a0cb3c5b801ab3f85817f7f829b58616980be45ef8f508e4194d3f6->doDisplay(Array, Array)
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 /home/c1462208c/public_html/var in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:21:18 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unclosed "variable". in /home/c1462208c/public_html/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig:36
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(292): Twig\Lexer->lexExpression()
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(186): Twig\Lexer->lexVar()
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', '@FOSUser/Regist...', NULL)
+#6 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(333): Twig\Environment->loadTemplate('@FOSUser/Regist...', NULL)
+#7 /home/c1462208 in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:21:21 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unclosed "variable". in /home/c1462208c/public_html/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig:36
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(292): Twig\Lexer->lexExpression()
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(186): Twig\Lexer->lexVar()
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', '@FOSUser/Regist...', NULL)
+#6 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(333): Twig\Environment->loadTemplate('@FOSUser/Regist...', NULL)
+#7 /home/c1462208 in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:21:24 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unclosed "variable". in /home/c1462208c/public_html/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig:36
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(292): Twig\Lexer->lexExpression()
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(186): Twig\Lexer->lexVar()
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', '@FOSUser/Regist...', NULL)
+#6 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(333): Twig\Environment->loadTemplate('@FOSUser/Regist...', NULL)
+#7 /home/c1462208 in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:21:28 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unclosed "variable". in /home/c1462208c/public_html/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig:36
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(292): Twig\Lexer->lexExpression()
+#1 /home/c1462208c/public_html/vendor/twig/twig/src/Lexer.php(186): Twig\Lexer->lexVar()
+#2 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(542): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(595): Twig\Environment->tokenize(Object(Twig\Source))
+#4 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#5 /home/c1462208c/public_html/vendor/twig/twig/src/Environment.php(381): Twig\Environment->loadClass('__TwigTemplate_...', '@FOSUser/Regist...', NULL)
+#6 /home/c1462208c/public_html/vendor/twig/twig/src/Template.php(333): Twig\Environment->loadTemplate('@FOSUser/Regist...', NULL)
+#7 /home/c1462208 in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:22:51 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/styles/main_st...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:26:48 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/3907.jp...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:27:04 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/fr/admin')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:28:44 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Security\Core\Exception\AccessDeniedException: Access Denied. in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall/AccessListener.php:68
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall.php(111): Symfony\Component\Security\Http\Firewall\AccessListener->handle(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent))
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Security/Http/Firewall.php(84): Symfony\Component\Security\Http\Firewall->handleRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), Object(Generator))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/EventListener/FirewallListener.php(48): Symfony\Component\Security\Http\Firewall->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/ in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:33:01 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/icheck...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:33:02 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 00:33:02 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/easing...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 01:39:35 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 01:39:35 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 01:39:35 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 12:47:35 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 12:47:36 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 13:03:38 Europe/Paris] PHP Fatal error:  Uncaught Stripe\Exception\CardException: Cannot charge a customer that has no active card in /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php:38
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/Exception/CardException.php(38): Stripe\Exception\ApiErrorException::factory('Cannot charge a...', 402, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'missing')
+#1 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(191): Stripe\Exception\CardException::factory('Cannot charge a...', 402, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'missing', NULL, 'card')
+#2 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(149): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#3 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(438): Stripe\ApiRequestor->handleErrorResponse in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 13:25:55 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/3907.jp...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 13:54:52 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 13:54:52 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 13:55:34 Europe/Paris] PHP Fatal error:  Uncaught Stripe\Exception\CardException: Cannot charge a customer that has no active card in /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php:38
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/Exception/CardException.php(38): Stripe\Exception\ApiErrorException::factory('Cannot charge a...', 402, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'missing')
+#1 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(191): Stripe\Exception\CardException::factory('Cannot charge a...', 402, '{\n  "error": {\n...', Array, Object(Stripe\Util\CaseInsensitiveArray), 'missing', NULL, 'card')
+#2 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(149): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#3 /home/c1462208c/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(438): Stripe\ApiRequestor->handleErrorResponse in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 15:20:46 Europe/Paris] PHP Parse error:  syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/c1462208c/public_html/src/AppBundle/Form/StripePayType.php on line 23
+[21-Sep-2020 15:22:07 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[21-Sep-2020 15:22:07 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:07:01 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(1449): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(892): Doctrine\DBAL\Connect in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:07:14 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:07:26 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:08:09 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:08:30 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:08:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:08:55 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:10:06 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 93
+[22-Sep-2020 10:16:39 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:16:40 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:21:44 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:21:51 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2005] Unknown MySQL server host 'ftp.mef-assodoves.org' (-2) in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(388): Doctrine\DBAL\Connecti in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[22-Sep-2020 10:37:53 Europe/Paris] PHP Warning:  Uncaught Symfony\Component\Debug\Exception\ContextErrorException: Warning: require(/home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/getSwiftmailer_EmailSender_ListenerService.php): failed to open stream: No such file or directory in /home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/appProdDebugProjectContainer.php:1035
+Stack trace:
+#0 /home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/appProdDebugProjectContainer.php(1035): require()
+#1 /home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/appProdDebugProjectContainer.php(1397): ContainerQcsrlmx\appProdDebugProjectContainer->load('getSwiftmailer_...')
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(231): ContainerQcsrlmx\appProdDebugProjectContainer->ContainerQcsrlmx\{closure}()
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(61): Symfony\Component\EventDispatcher\EventDispatcher->sortListeners('ke in /home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/appProdDebugProjectContainer.php on line 1035
+[22-Sep-2020 10:37:53 Europe/Paris] PHP Fatal error:  ContainerQcsrlmx\appProdDebugProjectContainer::load(): Failed opening required '/home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/getSwiftmailer_EmailSender_ListenerService.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/c1462208c/public_html/var/cache/prod/ContainerQcsrlmx/appProdDebugProjectContainer.php on line 1035
+[22-Sep-2020 13:52:51 Europe/Paris] PHP Warning:  mkdir(): File exists in /home/c1462208c/public_html/vendor/symfony/assetic-bundle/DependencyInjection/Compiler/RouterResourcePass.php on line 37
+[22-Sep-2020 13:58:23 Europe/Paris] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/c1462208c/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php on line 12
+[22-Sep-2020 13:58:28 Europe/Paris] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/c1462208c/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php on line 12
+[22-Sep-2020 13:59:07 Europe/Paris] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/c1462208c/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php on line 12
+[22-Sep-2020 13:59:14 Europe/Paris] PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /home/c1462208c/public_html/vendor/doctrine/cache/lib/Doctrine/Common/Cache/Cache.php on line 12
+[22-Sep-2020 21:06:32 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: last4
+[22-Sep-2020 21:06:32 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: network
+[22-Sep-2020 21:28:05 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: last4
+[22-Sep-2020 21:28:05 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: network
+[23-Sep-2020 21:08:49 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'AppBundle\AppBundle' not found in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(195): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/web/app.php(19): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/c1462208c/public_html/app/AppKernel.php on line 20
+[23-Sep-2020 21:08:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'AppBundle\AppBundle' not found in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(195): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/web/app.php(19): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/c1462208c/public_html/app/AppKernel.php on line 20
+[23-Sep-2020 21:13:42 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'AppBundle\AppBundle' not found in /home/c1462208c/public_html/app/AppKernel.php:20
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(493): AppKernel->registerBundles()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(132): Symfony\Component\HttpKernel\Kernel->initializeBundles()
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(195): Symfony\Component\HttpKernel\Kernel->boot()
+#3 /home/c1462208c/public_html/web/app.php(19): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#4 {main}
+  thrown in /home/c1462208c/public_html/app/AppKernel.php on line 20
+[24-Sep-2020 18:59:27 Europe/Paris] PHP Warning:  require(/home/c1462208c/public_html/vendor/composer/../symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home/c1462208c/public_html/vendor/composer/autoload_real.php on line 69
+[24-Sep-2020 18:59:28 Europe/Paris] PHP Warning:  require(/home/c1462208c/public_html/vendor/composer/../symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /home/c1462208c/public_html/vendor/composer/autoload_real.php on line 69
+[24-Sep-2020 18:59:28 Europe/Paris] PHP Fatal error:  require(): Failed opening required '/home/c1462208c/public_html/vendor/composer/../symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/c1462208c/public_html/vendor/composer/autoload_real.php on line 69
+[25-Sep-2020 01:16:27 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: Indentation problem in "/home/c1462208c/public_html/app/config/parameters.yml" at line 4 (near "    database_port: 21"). in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php:651
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(373): Symfony\Component\Yaml\Parser->getNextEmbedBlock()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(142): Symfony\Component\Yaml\Parser->doParse('parameters:\n   ...', 768)
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(78): Symfony\Component\Yaml\Parser->parse('# This file is ...', 768)
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/YamlFileLoader.php(661): Symfony\Component\Yaml\Parser->parseFile('/home/c1462208c...', 768)
+#4 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Config/Loader/FileLoader.php on line 168
+[25-Sep-2020 01:16:46 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: Indentation problem in "/home/c1462208c/public_html/app/config/parameters.yml" at line 4 (near "    database_port: 21"). in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php:651
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(373): Symfony\Component\Yaml\Parser->getNextEmbedBlock()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(142): Symfony\Component\Yaml\Parser->doParse('parameters:\n   ...', 768)
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(78): Symfony\Component\Yaml\Parser->parse('# This file is ...', 768)
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/YamlFileLoader.php(661): Symfony\Component\Yaml\Parser->parseFile('/home/c1462208c...', 768)
+#4 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Config/Loader/FileLoader.php on line 168
+[25-Sep-2020 01:17:25 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Yaml\Exception\ParseException: Indentation problem in "/home/c1462208c/public_html/app/config/parameters.yml" at line 4 (near "    database_port: 21"). in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php:651
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(373): Symfony\Component\Yaml\Parser->getNextEmbedBlock()
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(142): Symfony\Component\Yaml\Parser->doParse('parameters:\n   ...', 768)
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Yaml/Parser.php(78): Symfony\Component\Yaml\Parser->parse('# This file is ...', 768)
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/YamlFileLoader.php(661): Symfony\Component\Yaml\Parser->parseFile('/home/c1462208c...', 768)
+#4 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony in /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Config/Loader/FileLoader.php on line 168
+[25-Sep-2020 01:21:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 01:21:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 01:22:01 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 01:22:01 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 01:41:59 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 02:27:58 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/fr/admin')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:28:04 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/fr/admin')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetResponseEvent), in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:28:32 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:30:14 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:30:14 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:30:14 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:31:30 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:31:31 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:31:31 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/plugins/bootst...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:32:35 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:33:48 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:34:37 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:37:46 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:38:29 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:40:41 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 02:40:52 Europe/Paris] PHP Fatal error:  require(): Failed opening required '/home/c1462208c/public_html/var/cache/prod/ContainerStlpqp6/getSwiftmailer_EmailSender_ListenerService.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/c1462208c/public_html/var/cache/prod/ContainerStlpqp6/appProdProjectContainer.php on line 1035
+[25-Sep-2020 02:42:53 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:42:58 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:43:05 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:43:11 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:43:37 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 02:43:42 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 02:44:23 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2059] Plugin http could not be loaded: /usr/lib64/mysql/plugin/http.so: cannot open shared object file: No such file or directory in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=http...', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctri in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:45:50 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 106
+[25-Sep-2020 02:45:53 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:46:16 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[25-Sep-2020 02:48:11 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[26-Sep-2020 02:18:58 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[26-Sep-2020 02:18:58 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[26-Sep-2020 03:25:33 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[26-Sep-2020 03:50:32 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[27-Sep-2020 21:26:45 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[27-Sep-2020 22:13:10 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[27-Sep-2020 22:44:30 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[27-Sep-2020 23:28:31 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[27-Sep-2020 23:51:05 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 01:00:08 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 02:09:35 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 03:58:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 04:42:24 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 05:05:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 05:26:58 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 06:01:53 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 06:11:33 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 06:41:42 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 07:49:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 08:27:07 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 08:37:14 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 09:52:52 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 10:04:59 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 10:25:51 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 10:46:15 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 12:31:58 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 12:43:28 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 15:23:42 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 19:00:23 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 20:41:07 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 21:04:25 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 22:10:00 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 22:42:27 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 22:48:44 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 22:59:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[28-Sep-2020 23:48:41 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 00:59:31 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 03:06:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 03:19:57 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 04:33:50 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 06:39:52 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 09:03:35 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 09:06:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 09:07:52 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 09:09:23 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 10:40:12 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 11:44:33 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 12:08:21 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 13:45:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 15:08:57 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 16:34:09 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 17:08:55 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 17:31:36 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 17:43:44 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 18:57:47 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 20:20:23 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[29-Sep-2020 20:27:22 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 10:31:19 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/preload...')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 10:31:19 Europe/Paris] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\ResourceNotFoundException in /home/c1462208c/public_html/var/cache/prod/appProdProjectContainerUrlMatcher.php:781
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Matcher/UrlMatcher.php(93): appProdProjectContainerUrlMatcher->match('/images/paypal....')
+#1 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/Routing/Router.php(262): Symfony\Component\Routing\Matcher\UrlMatcher->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/RouterListener.php(113): Symfony\Component\Routing\Router->matchRequest(Object(Symfony\Component\HttpFoundation\Request))
+#3 /home/c1462208c/public_html/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/EventDispatcher.php(214): Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest(Object(Symfony\Component\HttpKernel\Event\GetRespon in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 10:32:17 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 10:56:33 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 12:27:50 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 12:38:42 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 15:08:48 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 16:06:55 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 22:47:12 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[01-Oct-2020 22:58:27 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 02:00:45 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 05:57:39 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 06:41:15 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 06:51:27 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 07:40:33 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 07:51:07 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[02-Oct-2020 09:40:08 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[08-Oct-2020 10:42:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'handshake: reading initial communication packet', system error: 110 in /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:27
+Stack trace:
+#0 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(27): PDO->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#1 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(25): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=ftp....', 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#2 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(362): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'c1462208c', 'k534XKpyNY3xCuJ', Array)
+#3 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 /home/c1462208c/public_html/vendor/doctrine/dbal/lib/Doctrine in /home/c1462208c/public_html/app/Resources/TwigBundle/views/Exception/error.html.twig on line 243
+[10-Oct-2020 11:23:05 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: last4
+[10-Oct-2020 11:23:05 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: network
+[20-Oct-2020 17:11:58 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: last4
+[20-Oct-2020 17:11:58 Europe/Paris] Stripe Notice: Undefined property of Stripe\Charge instance: network

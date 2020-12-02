@@ -1,0 +1,4 @@
+app_donation_pay:
+    path:     /cause/{slug}
+    defaults: { _controller: "AppBundle:Payment:donation" }
+

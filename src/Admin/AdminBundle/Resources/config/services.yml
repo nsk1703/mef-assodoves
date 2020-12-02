@@ -1,0 +1,8 @@
+services:
+#    admin.example:
+#        class: Admin\AdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+    setNewReference:
+      class:  Admin\AdminBundle\Services\GetReference
+      arguments: ["@security.token_storage", "@doctrine.orm.entity_manager"]

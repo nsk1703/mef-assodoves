@@ -1,0 +1,482 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+<style>
+  .form-control  {
+    color: rgb(129, 145, 160);
+    display: block;
+    width: 100% ;
+    height: calc(2.35rem + 2px);
+    padding: .375rem .75rem;
+ 
+    font-size: 13px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ }
+ label{
+    font-weight: 500;
+   }
+
+   .item{
+    padding:8px;
+  }
+
+
+</style>
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 style="font-size: 16px;">Niveau d'adhésion</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Niveau d'adhésion</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+  <!-- Data Table area Start-->
+  <section class="content" style="padding-bottom: 50px;">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                      <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                          <p style="position:relative; top:10px;">Liste des status de membres dans l'association</p>
+                      </div>
+                          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+                            <div class="data-table-area">
+                              <table id="dataTable" class="table " style="width:100%;">
+                                  <thead>
+                                      <tr>
+                                          <th>Niveau</th>
+                                          <th>Prix</th>
+                                          <th class="text-center">Logo</th> 
+                                          <th class="text-center">Lien</th>
+                                          <th class="text-center">Nom </th>                                       
+                                          <th class="text-center action_table_btn">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody><tr></tr></tbody>                                
+                              </table>
+                            </div>
+                            </div>
+                            <div class="form-footer" style="border-top: 1px solid #dadce0; padding-top:10px; padding-bottom:10px;">
+                              <div class="text-right" style="padding-left:16px; padding-right:16px;">
+                                  <a href="#newEntityModal" data-toggle="modal" class="btn newEtityModal" style="border:none; color: #1a73e8; font-weight:600; font-size:14px;">Ajouter <i class="fa fa-plus-circle"></i>    </a>
+                              </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+
+{% endblock %}
+{% block modals %}
+
+<div class="modal fade" id="newEntityModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+          <div class="modal-header" style="">
+          <h5 class="modal-title" id="exampleModalLabel" style="font-size: 14px;">Ajoutez un status de membres</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                 
+                  <div class="col-lg-12  col-12" style="padding-left: 16px; padding-right:16px;">
+                    <form action="{{ path('admin_status_new')}}" method="POST" id="newEntityForm" >
+                      <div style="padding-left:16px; padding-right:16px;">
+                        <p class="text-center" style="
+                        font-size: 13px;
+                        font-weight: 500;
+                        letter-spacing: 0.4px;
+                        padding-top:5px; padding-left:10px; padding-right:10px;">
+                            Il ne faut jamais envoyer de l’argent à l’avance .
+                        </p>
+                        <div class="form-row">
+                        
+                          <div class="col-12 mb-3">
+                                {{ form_label(form.name, "Niveau d'ahésion*", {'label_attr': {'': ''}}) }}
+                              
+                                    {{ form_errors(form.name) }}
+                                    {{ form_widget(form.name) }}
+                                
+                          </div>
+
+                          <div class="col-12 mb-3">
+                              {{ form_label(form.price, "Prix*", {'label_attr': {'': ''}}) }}
+                            
+                                  {{ form_errors(form.price) }}
+                                  {{ form_widget(form.price) }}
+                              
+                              
+                          </div>
+                          <div class="col-12 mb-3">
+                          {{ form_label(form.companyNameShow, "Affiche le nom de l'entreprise*", {'label_attr': {'': ''}}) }}
+                        
+                              {{ form_errors(form.companyNameShow) }}
+                              {{ form_widget(form.companyNameShow) }}
+                                                  
+                          </div>
+
+                          <div class="col-12 mb-3">
+                            {{ form_label(form.companyLogoShow, "Affiche le logo de l'entreprise*", {'label_attr': {'': ''}}) }}
+                          
+                                {{ form_errors(form.companyLogoShow) }}
+                                {{ form_widget(form.companyLogoShow) }}
+                                                    
+                          </div>
+    
+                          <div class="col-12 mb-3">
+                              {{ form_label(form.companyWebsiteShow, "Affiche le site web de l'entreprise*", {'label_attr': {'': ''}}) }}
+                            
+                                  {{ form_errors(form.companyWebsiteShow) }}
+                                  {{ form_widget(form.companyWebsiteShow) }}
+                                                      
+                          </div>
+
+                          <div class="col-12">
+                            {{ form_widget(form) }}
+                          <button type="submit" style="border: none;
+                          color: #fff !important;
+                          font-size: 13px !important;
+                          background-color: #00b8b1;
+                          padding: 12px 40px !important;
+                          font-weight: 550 !important;
+                          border-radius: 4px;
+                          width:100%;
+                          box-shadow: 0 2px 12px -6px #00b8b1!important;">Enregister</button>
+                          
+                          </div>
+                    
+
+                        </div>  
+                      </div>
+
+                    </form>	      
+                    
+                  </div>
+              </div>
+                          
+          </div>
+
+      </div>
+  </div>
+</div>    
+
+
+<div class="modal fade show" id="editEntityModal" tabindex="-1" role="dialog" aria-labelledby="editEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editEntityModalLabel" style="font-size: 14px; padding: unset">Modifier le catalogue</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>        
+        </div>
+              <form action="" method="POST" id="editEntityForm" >	
+                <div class="modal-body">       
+
+                  <div class="form-row">
+                        
+                    <div class="col-12 mb-3">
+                          {{ form_label(edit_form.name, "Niveau d'ahésion*", {'label_attr': {'': ''}}) }}
+                        
+                              {{ form_errors(edit_form.name) }}
+                              {{ form_widget(edit_form.name) }}
+                          
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        {{ form_label(edit_form.price, "Prix*", {'label_attr': {'': ''}}) }}
+                      
+                            {{ form_errors(edit_form.price) }}
+                            {{ form_widget(edit_form.price) }}
+                        
+                        
+                    </div>
+                    <div class="col-12 mb-3">
+                    {{ form_label(edit_form.companyNameShow, "Affiche le nom de l'entreprise*", {'label_attr': {'': ''}}) }}
+                  
+                        {{ form_errors(edit_form.companyNameShow) }}
+                        {{ form_widget(edit_form.companyNameShow) }}
+                                            
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      {{ form_label(edit_form.companyLogoShow, "Affiche le logo de l'entreprise*", {'label_attr': {'': ''}}) }}
+                    
+                          {{ form_errors(edit_form.companyLogoShow) }}
+                          {{ form_widget(edit_form.companyLogoShow) }}
+                                              
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        {{ form_label(edit_form.companyWebsiteShow, "Affiche le site web de l'entreprise*", {'label_attr': {'': ''}}) }}
+                      
+                            {{ form_errors(edit_form.companyWebsiteShow) }}
+                            {{ form_widget(edit_form.companyWebsiteShow) }}
+                                                
+                    </div>
+
+                    <div class="col-12">
+                      {{ form_widget(edit_form) }}
+                    <button type="submit" style="border: none;
+                    color: #fff !important;
+                    font-size: 13px !important;
+                    background-color: #00b8b1;
+                    padding: 12px 40px !important;
+                    font-weight: 550 !important;
+                    border-radius: 4px;
+                    width:100%;
+                    box-shadow: 0 2px 12px -6px #00b8b1!important;">Enregister</button>
+                    
+                    </div>
+              
+
+                  </div>  
+                </div>
+ 
+                </div>
+  
+        
+        </form>	
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression du catalogue</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_catalogue_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de supprimer le catalogue <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa supression complète et irrevocable de la base de données
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+            <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block javascript %}
+
+  <!-- Page level plugins -->
+  <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+  <script>
+  // Call the dataTables jQuery plugin
+  $(document).ready(function() {
+    $('#dataTable').DataTable({
+        "processing": true,
+        "lengthChange": false,
+        "searching": true,
+        "info": true,
+        "ordering": true,        
+        "autoWidth": false,
+        "responsive": true,
+        "ajax": Routing.generate('admin_status_dataTable_data'),
+        "columns": [
+          { "data": "name" },
+          { "data": "price", 
+                render : function(data, type, row) {
+                  return '<span>'+data+'</span><span class="fa fa-euro-sign" style="margin-left:5px;"></span>'
+                }
+          },
+          { "data": "logo" , 
+                render : function(data, type, row) {
+                  var boolTest = data;
+                  var domElement;
+                  if(boolTest == true ){
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#00b8b1; font-size:20px;"></span></div>'                    
+                  }else{
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#ccc; font-size:20px;"></span></div>'
+                  }
+                  
+                return domElement;
+                  
+                }
+                 
+          },
+          { "data": "link", 
+                render : function(data, type, row) {
+                  var boolTest = data;
+                  var domElement;
+                  if(boolTest == true ){
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#00b8b1; font-size:20px;"></span></div>'                    
+                  }else{
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#ccc; font-size:20px;"></span></div>'
+                  }
+                  
+                return domElement;
+
+                }
+          },
+          { "data": "company", 
+                render : function(data, type, row) {
+                  var boolTest = data;
+                  var domElement;
+                  if(boolTest == true ){
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#00b8b1; font-size:20px;"></span></div>'                    
+                  }else{
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#ccc; font-size:20px;"></span></div>'
+                  }
+                  
+                return domElement;
+                  
+              }
+
+          },
+          { "data": "id",
+                render : function(data, type, row) {
+                  return '<div class="btn-group">'+
+                          '<button type="button" class="btn btn-primary">Action</button>'+
+                          '<button type="button" class="btn btn-primary waves-effect dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                              '<span class="sr-only">Toggle Dropdown</span>'+
+                          '</button>'+
+                          '<div class="dropdown-menu">'+
+                              '<a class="dropdown-item" onclick="openEditModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-edit fa-fw mr-2 text-gray-400"></span> Modifier'+
+                              '</a>'+
+                              '<a class="dropdown-item" onclick="openDeletModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-trash fa-fw mr-2 text-gray-400"></span> Suppr'+
+                              '</a>'+
+                            
+                          '</div>'+
+                        '</div>'
+              }    
+          
+           },
+          ],
+        order: [
+            [1, 'desc']
+        ]
+    });
+  });
+
+
+//open edit modal form
+function openEditModal(id){
+   
+   $.ajax({
+       type: 'get', 
+       url: Routing.generate('admin_status_item_data', {id: id}),
+       success: function(data) {
+         var boolLogoShowTest = "0"; var boollinkShowTest ="0"; var boolCompanyShowTest = "0";
+
+         if(data.linkShow == true){
+          boollinkShowTest ="1";
+          boolCompanyShowTest ="1";
+         } 
+         if(data.companyShow == true){
+          boolCompanyShowTest = "1";
+         }
+         if(data.logoShow == true){
+          boolLogoShowTest = "1";
+          boollinkShowTest ="1";
+          boolCompanyShowTest = "1";
+
+         }
+       $("#appbundle_edit_status_name").val(data.name); 
+       $('#appbundle_edit_status_price').val(data.price);
+       $('#appbundle_edit_status_companyLogoShow').val(boolLogoShowTest).change();
+       $('#appbundle_edit_status_companyWebsiteShow').val(boollinkShowTest).change();
+       $('#appbundle_edit_status_companyNameShow').val(boolCompanyShowTest).change();
+       $('#editEntityForm').attr('action', '/status/edit/' +data.id);
+       }
+   }).done(function(data){ 
+           $('#editEntityModal').modal('show');
+    });
+
+}
+
+//open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_status_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_delete_status_id" ).val(data.id);   
+       $(".entity_name").text(data.name); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+//ajax submit new entity form data
+$("#newEntityForm").submit(function(event){
+    event.preventDefault(); //prevent default action    
+    var post_url = $(this).attr("action"); //get form action url
+    var request_method = $(this).attr("method"); //get form GET/POST method
+	var form_data = new FormData(this); //Creates new FormData object
+    $.ajax({
+        url : post_url,
+        type: request_method,
+        data : form_data,
+		contentType: false,
+		cache: false,
+        processData:false,
+
+        success : function(){
+         $('#newEntityModal').modal('hide');    
+        }
+    }).done(function(){ //
+        $('#newEntityForm').trigger("reset"); 
+        if($('#thumbnail'))$('#thumbnail').hide();
+        $('#dataTable').DataTable().ajax.reload();
+    });
+
+}); 
+
+
+
+  </script>
+
+{% endblock %}

@@ -1,0 +1,320 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+ <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Volontaires</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+              <li class="breadcrumb-item active">Volontaires</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+<style>
+  .products-list .product-info {
+     margin-left: 16px; 
+     margin-right: 16px; 
+}
+.item{
+  padding:8px;
+}
+
+</style>
+
+  <!-- Data Table area Start-->
+  <section class="content" style="margin-bottom:30px;">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+                      <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+                          <p style="position:relative; top:10px;">Liste des volontaires inscripts sur la plateforme</p>
+                      </div>
+                          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px; max-height:280px; overflow:auto;">
+                            <div class="data-table-area">
+                              <table id="dataTable" class="table" style="width:100%;">
+                                  <thead>
+                                      <tr>
+                                          <th>Nom</th>
+                                          <th>Email</th>
+                                          <th class="text-center">Checked</th>
+                                          <th>Inscript le</th>  
+                                          <th class="action_table_btn">Action</th>                                       
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr></tr>
+                                  </tbody>                                
+                              </table>
+                            </div>
+                            </div>
+                            <div class="form-footer" style="border-top: 1px solid #dadce0; padding-top:10px; padding-bottom:10px;">
+                              <div class="text-right" style="padding-left:16px; padding-right:16px;">
+                                  <a href="{{path('admin_volonteer_make_pdf')}}" class="btn" style="border:none; color: #1a73e8; font-weight:500; font-size:14px;">Imprimer <i class="fa fa-print"></i>    </a>
+                              </div>
+                            </div>
+                  </div>
+              </div>
+      </div>
+
+  </section>
+  <!-- Data Table area End-->
+
+{% endblock %}
+
+
+{% block modals %}
+<div class="modal fade show" id="editEntityModal" tabindex="-1" role="dialog" aria-labelledby="editEntityModalLabel" style="display: none;">
+		<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editEntityModalLabel">Modifier les informations du volontaire </h5>
+        </div>
+              <form action="" method="POST" id="editEntityForm" enctype="multipart/form-data">	
+                <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+
+                  <div  class="form-content" style="padding-bottom:10px; padding-top:10px;">
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.name, "Nom*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.name) }}
+                              {{ form_widget(edit_form.name) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>                       
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.email, "Adresse email*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.email) }}
+                              {{ form_widget(edit_form.email) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>  
+
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.phone, "N° de téléphone*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.phone) }}
+                              {{ form_widget(edit_form.phone) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>
+
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.country, "Pays de residence*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.country) }}
+                              {{ form_widget(edit_form.country) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>
+
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.town, "Ville de residence*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.town) }}
+                              {{ form_widget(edit_form.town) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>
+
+                    <div class="form-group  row">
+                      <div class="col-12">
+                          {{ form_label(edit_form.work, "Metier*", {'label_attr': {'style': 'color: gray; font-size:12px;'}}) }}
+                          <div class="nk-int-st">
+                              {{ form_errors(edit_form.work) }}
+                              {{ form_widget(edit_form.work) }}
+                          
+                          </div>  
+                      </div>
+
+                    </div>
+
+
+          
+                    {{ form_widget(edit_form) }}
+                  </div>
+ 
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+                  <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Enregistrer</button>
+                </div>
+        
+        </form>	
+		</div>
+	</div>
+</div>
+
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression du volontaire</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_member_volonteer_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de supprimer le volontaire <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa supression complète et irrevocable de la base de données
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+            <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+
+
+
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+
+    <script>
+    // Call the dataTables jQuery plugin
+
+    $('#dataTable').DataTable({
+        "processing": true,
+        "lengthChange": false,
+        "searching": true,
+        "info": true,
+        "ordering": true,        
+        "autoWidth": false,
+        "responsive": true,
+        "ajax": Routing.generate('admin_volonteer_dataTable_data'),
+        "columns": [
+          { "data": "name" },
+          { "data": "email" },
+          { "data": "checked" , 
+                render : function(data, type, row) {
+                  var boolTest = data;
+                  var domElement;
+                  if(boolTest == true ){
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#00b8b1; font-size:20px;"></span></div>'                    
+                  }else{
+                    domElement = '<div class="text-center"><span class="fa fa-check-circle" style="color:#ccc; font-size:20px;"></span></div>'
+                  }
+                  
+                return domElement;
+                  
+                }
+                 
+          },
+          { "data": "date" },
+          { "data": "id",
+                render : function(data, type, row) {
+                  return '<div class="btn-group">'+
+                          '<button type="button" class="btn btn-primary">Action</button>'+
+                          '<button type="button" class="btn btn-primary waves-effect dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+                              '<span class="sr-only">Toggle Dropdown</span>'+
+                          '</button>'+
+                          '<div class="dropdown-menu">'+
+                              '<a class="dropdown-item" onclick="openEditModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-edit fa-fw mr-2 text-gray-400"></span> Modifier'+
+                              '</a>'+
+                              '<a class="dropdown-item" onclick="openDeletModal('+data+');" style="cursor:pointer;">'+
+                                '<span class="fa fa-trash fa-fw mr-2 text-gray-400"></span> Suppr'+
+                              '</a>'+
+                            
+                          '</div>'+
+                        '</div>'
+              }    
+          
+           },
+          ],
+        order: [
+            [1, 'desc']
+        ]
+    });
+
+
+//open show modal form
+function openEditModal(id){
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_volonteer_item_data', {id: id}),
+     success: function(data) {
+       $("#appbundle_volonteer_edit_name").val(data.name); 
+       $("#appbundle_volonteer_edit_email").val(data.email); 
+       $("#appbundle_volonteer_edit_town").val(data.town); 
+       $("#appbundle_volonteer_edit_country").val(data.phone).change(); 
+       $("#appbundle_volonteer_edit_phone").text(data.phone); 
+       $("#appbundle_volonteer_edit_work").text(data.work); 
+       $('#editEntityForm').attr('action', '/member/volonteer/edit/' +data.id);
+       $('#editEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+
+
+
+//open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_volonteer_item_data', {id: id}),
+     success: function(data) {
+       $( "#appbundle_volonteer_delete_id" ).val(data.id);   
+       $(".entity_name").text(data.name); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+}
+  </script>
+
+{% endblock %}

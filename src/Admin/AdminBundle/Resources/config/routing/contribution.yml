@@ -1,0 +1,21 @@
+admin_contribution_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Contribution:index" }
+
+
+admin_contribution_make_pdf:
+    path:     /pdf
+    defaults: { _controller: "AdminBundle:Contribution:makePdf" }
+
+    
+admin_contribution_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Contribution:new" }
+    options:
+        expose: true
+
+admin_contribution_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Contribution:delete" }
+    options:
+        expose: true 

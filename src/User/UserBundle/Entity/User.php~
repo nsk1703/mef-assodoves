@@ -1,0 +1,184 @@
+<?php
+
+namespace User\UserBundle\Entity;
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * User
+ *
+ * @ORM\Table(name="user")
+ * @ORM\Entity(repositoryClass="User\UserBundle\Repository\UserRepository")
+ */
+class User extends BaseUser
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    
+	/**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Article", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+
+    private $article;
+
+ 	/**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Member", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $member;   
+
+
+ 	/**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Event", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $event;   
+
+	/**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Contribution", mappedBy="user", cascade={"remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+
+    private $contribution;
+
+
+
+
+
+	public function __construct()
+    {
+        parent::__construct();
+        $this->article = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->event = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->contribution = new \Doctrine\Common\Collections\ArrayCollection();
+      
+      
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+ 
+    /**
+     * Add article
+     *
+     * @param \AppBundle\Entity\Article $article
+     *
+     * @return User
+     */
+    public function addArticle(\AppBundle\Entity\Article $article)
+    {
+        $this->article[] = $article;
+
+        return $this;
+    }
+
+    /**
+     * Remove event
+     *
+     * @param \AppBundle\Entity\Article $event
+     */
+    public function removeEvent(\AppBundle\Entity\Event $event)
+    {
+        $this->event->removeElement($event);
+    }
+
+    /**
+     * Get event
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getEvent()
+    {
+        return $this->event;
+    }
+
+ 
+
+
+    /**
+     * Remove article.
+     *
+     * @param \AppBundle\Entity\Article $article
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeArticle(\AppBundle\Entity\Article $article)
+    {
+        return $this->article->removeElement($article);
+    }
+
+    /**
+     * Get article.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getArticle()
+    {
+        return $this->article;
+    }
+
+    /**
+     * Add event.
+     *
+     * @param \AppBundle\Entity\Event $event
+     *
+     * @return User
+     */
+    public function addEvent(\AppBundle\Entity\Event $event)
+    {
+        $this->event[] = $event;
+
+        return $this;
+    }
+
+    /**
+     * Add contribution.
+     *
+     * @param \AppBundle\Entity\contribution $contribution
+     *
+     * @return User
+     */
+    public function addContribution(\AppBundle\Entity\contribution $contribution)
+    {
+        $this->contribution[] = $contribution;
+
+        return $this;
+    }
+
+    /**
+     * Remove contribution.
+     *
+     * @param \AppBundle\Entity\contribution $contribution
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeContribution(\AppBundle\Entity\contribution $contribution)
+    {
+        return $this->contribution->removeElement($contribution);
+    }
+
+    /**
+     * Get contribution.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getContribution()
+    {
+        return $this->contribution;
+    }
+}

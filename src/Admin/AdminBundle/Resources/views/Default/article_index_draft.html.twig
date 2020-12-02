@@ -1,0 +1,313 @@
+{% extends "layout/admin.html.twig" %}
+{% block stylesheets %}
+  <link href="{{ asset('plugins/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+{% endblock %}
+{% block content %}
+<!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Articles Brouillon</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+            <li class="breadcrumb-item active">Articles</li>
+            <li class="breadcrumb-item ">Brouillon</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </div>
+
+  <!-- Data Table area Start-->
+  <div class="content" style="padding-bottom: 50px;">
+    <div class="row" >
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="widget-tabs-int" style="background: #fff; border-radius:5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.17);">
+          <div class="tab-hd" style="border-bottom: 1px solid #dadce0; padding-left:16px; padding-right:16px; padding-top:10px; padding-bottom:10px;">
+              <p style="position:relative; top:10px;">Liste d'articles dans le brouillon.
+                <a href="{{path('admin_article_new')}}" class="btn float-right" style="border:none; color: #1a73e8; font-weight:500; font-size:14px;position:relative; top:-10px;">Ajouter <i class="fa fa-plus-circle"></i>    </a>
+
+              </p>
+          </div>
+          <div class="form_body" style="padding-top:16px; padding-bottom:30px; padding-left:16px; padding-right:16px;">
+            <div class="data-table-area">
+              <table id="dataTable" class="table" style="width:100%;">
+<style>
+  .table thead th {
+  vertical-align: bottom;
+  border-bottom: 0px solid #dee2e6;
+  }
+  table .sorting_desc{
+  border:unset;
+  margin-top:10px;
+  }
+  table td, table tr{
+  border:unset;
+  }
+  .table td, .table th {
+  vertical-align: top;
+  border-top: unset;
+  margin-bottom:10px;
+  margin-top:10px;
+  border-bottom: 1px solid #dadce0;
+  }
+
+  .article_content{
+  padding-top:10px;
+  color: #8d8d8d; 
+  width:  580px;
+  max-width: 580px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow:clip;
+  font-weight:200; 
+  font-size:13px;
+  }
+  .article_title{
+     width:  350px;
+    max-width: 350px;
+    height: 25px;
+    overflow: hidden;
+    text-overflow:ellipsi;
+  }
+  .article_content p{
+  margin-bottom: 0.8rem;
+  font-size: 13px;
+  line-height: 1.5;
+  }
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+  .article_content{
+
+  width:  100%;
+  max-width: 100%;
+
+  }
+  .article_title{
+  width:  100%;
+  max-width: 100%;
+
+  }
+}
+</style>
+                  <thead>
+                    <tr>
+                        <th></th>
+
+                    </tr>
+                  </thead>
+                  <tbody style="border:none;">
+                    <tr></tr>                                      
+                  </tbody>                                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Data Table area End-->
+
+
+{% endblock %}
+
+{% block modals %}
+
+<div class="modal fade show" id="newEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression</h5>
+        </div>
+            <form id="newEntityForm" action="{{ path('admin_article_make_visible')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point de publier l'article <span class="entity_name" style="margin-left:2px;"></span>, ce qui 
+                            entrainera sa visibilité sur le site
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(form.id) }}
+                              {{ form_widget(form.id) }}
+                            </div>  
+
+                            {{ form_widget(form) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: rgba(60,64,67,0.38); ">Annuler</button>
+            <button type="submit" class="btn" style="color: #1a73e8; font-weight:600;">Restaurer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+<div class="modal fade show" id="deleteEntityModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntityModalLabel" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteEntityModalLabel">Suppression</h5>
+        </div>
+            <form id="deleteEntityForm" action="{{ path('admin_article_delete')}}" method="post">		
+              <div class="modal-body" style="padding-left:60px; padding-right:60px;  max-height:280px; overflow:auto;">       
+                <div class="row">
+                      <div class="col-12 ">
+                          <p class="text-justify">
+                            Vous êtes sur le point d'envoyer l'article <span class="entity_name" style="margin-left:2px;"></span> à la corbeille
+                            . Vous pourrez le retouver par la suite dans la corbeille
+                          </p>
+                          <div class="form-group col-12">
+                              {{ form_errors(deleteForm.id) }}
+                              {{ form_widget(deleteForm.id) }}
+                            </div>  
+
+                            {{ form_widget(deleteForm) }}
+                      </div>
+
+                </div>
+              
+                
+            </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn " data-dismiss="modal" style="color: #1a73e8; font-weight:600;">Annuler</button>
+            <button type="submit" class="btn" style="color: rgba(60,64,67,0.38);">Supprimer</button>
+        </div>
+      </form>	
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block javascript %}
+
+<!-- Page level plugins -->
+  <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+  <script src="{{ asset('plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+  <script>
+  // Call the dataTables jQuery plugin
+  $(document).ready(function() {
+    $('#dataTable').DataTable({
+      "processing": true,
+      "lengthChange": false,
+      "searching": true,
+      "info": true,
+      "ordering": true,        
+      "autoWidth": false,
+      "responsive": true,
+      "ajax": Routing.generate('admin_draft_article_dataTable_data'),
+      "columns": [
+        { "data": "id", 
+              render : function(data, type, row) {
+                 
+                return '<div class=""style="padding-bottom:10px; padding-top:10px;">'+
+                        '<div class="card mb-1" style="border:0px; box-shadow:unset; height:150px; max-height:150px; ">'+
+                          '<div class="row">'+
+                            '<div class="col-lg-2 d-none d-lg-block">'+
+                                  '<img src="'+row.image+'" class="card-img" alt="..." style="height:100px;border-radius:8px;">'+
+                            '</div>'+
+                            '<div class="col-lg-10 col-12">'+
+                              '<div class="card-body" style="position:relative; top:-16px;">'+
+                                '<div>'+
+                                  '<h5 class="card-title article_title" >'+
+                                    '<a href="article/edit/'+data+'" style="font-weight:550;font-size:15px; width:80%; color: #00b8b1;">'+row.title+' </a>'+
+                                  '</h5>'+
+                                  '<div class="d-none d-lg-block" style="position:absolute; right:0px; color: #8d8d8d; font-size:12px;font-weight:200;">'+
+                                    
+                                    '<a  href="#" onclick="openVisibletModal('+data+');" class="edit-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px; margin-right:10px;">Publier</a>'+
+                                    '<a href="#" onclick="openDeletModal('+data+');" class="delete-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px;">Supprimer</a>'+
+
+                                  '</div>'+
+                                '</div>'+
+                                '<div class="card-text" style="">'+
+                                  '<div class="article_content">'+row.content+'</div>'+
+                                '</div>'+
+                                '<div class="post-meta" style="margin-top:10px;font-size:12px; color: #8d8d8d;font-weight:200;">'+
+                                '<div class="post-meta-content"> <span class="far fa-bookmark" style="margin-right:5px;"></span> '+row.catalogue+''+  
+                                    '<span class="post-views" style="margin-left:10px;"> <i class="fa fa-eye"></i> '+row.seenCount+'</span> <span class="placeholder-post-read-later"></span>'+
+                                    '<span class="post-views" style="margin-left:10px; color: #8d8d8d;"><span class="" style="  margin-right:5px;"><span class="fa fa-dot-circle" style="font-size:10px; color: #00b8b1;"></span> Publié le</span>'+
+                                    '<span>'+row.date+'</span>'+
+                                    '</span> <br><br>'+
+                                     '<span class="d-block d-lg-none">'+
+                                     '<a href="#" onclick="openVisibletModal('+data+');" class="edit-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px; margin-right:10px;">Publier</a>'+
+                                      '<a href="#" onclick="openDeletModal('+data+');" class="delete-btn" style="border:1px solid #8d8d8d; border-radius:30px; color:#8d8d8d;font-size:13px;padding:5px 15px;">Supprimer</a>'+
+                                  '</span>'+
+                                  '</div>'+
+                                '</div>'+
+                              '</div>'+
+                            '</div>'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'
+            }    
+        
+         },
+        ],
+      order: [
+            [0, 'desc']
+        ]
+    });
+       
+  });
+
+
+//open edit modal form
+function openVisibletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_article_item_data', {id: id}),
+     success: function(data) {
+       $("#appbundle_make_visible_article_id").val(id);   
+       $(".entity_name").text(data.title); 
+       $('#visibleEntityModal').modal('show');   
+     }
+ });
+}
+
+//open edit modal form
+function openDeletModal(id){
+ 
+ $.ajax({
+   type: 'get', 
+     url: Routing.generate('admin_article_item_data', {id: id}),
+     success: function(data) {
+       $("#appbundle_delete_article_id" ).val(data.id);   
+       $(".entity_name").text(data.title); 
+       $('#deleteEntityModal').modal('show');   
+     }
+ });
+
+ 
+}
+$('.article_content').each(function() {
+  var maxchars = 230;
+  var seperator = '...';
+
+  if ($(this).text().length > (maxchars - seperator.length)) {
+      $(this).text($(this).text().substr(0, maxchars-seperator.length) + seperator);
+  }
+});
+
+  </script>
+
+{% endblock %}

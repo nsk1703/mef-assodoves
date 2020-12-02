@@ -1,0 +1,66 @@
+
+
+<div class="page-margin-modif" style="margin-top:70px; margin-bottom:180px;">
+	<div class="container">
+		<div class="row">
+
+	
+                    <div class="col-lg-12">
+                            <div class="card mb-3" style="height: 9rem;
+    border: 1px solid #cad1d9;
+    padding: 2.4rem;
+    border-radius: 8px;
+    background-color: #fff;">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6  col-12" >
+										<div style="position: relative; left:-20px;">
+											<img src="{{ asset('images/avatar.png')}}" class="card-img" alt="..." style="height:70px; width:70px;">
+											<div style="position:absolute; left:20%; top:20px; font-size:17px; font-weight:600;">{{user.email}}</div>
+										</div>
+									</div>
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <div class="card-body text-right">
+											<a href="{{path('fos_user_profile_edit')}}" style="
+											text-transform: uppercase;
+											margin-top:20px;
+											border: 1px solid #00b8b1;
+											padding: 12px 40px;
+											font-size: 13px;
+											font-weight:600;
+											cursor:pointer;
+											background-color: transparent;
+											font-weight: 500 !important;
+											border-radius: 8px;
+											text-transform: uppercase;
+											color: #00b8b1;">{{ 'nav.link_8'|trans }}
+										</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+		</div>
+
+
+		<div class="row">
+
+
+
+</div>
+
+	<div class="container col-lg-12" style="margin-top:20px;">
+		{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+			{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+			<a href="{{ path('fos_user_security_logout') }}">
+				{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+			</a>
+		{% else %}
+			<a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+		{% endif %}
+	</div>
+
+
+	</div>
+
+</div>

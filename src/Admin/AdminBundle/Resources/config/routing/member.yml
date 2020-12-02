@@ -1,0 +1,36 @@
+admin_member_volonteer:
+    path:     /volonteer
+    defaults: { _controller: "AdminBundle:Member:volonteer" }
+    methods:  GET
+
+
+admin_volonteer_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Member:volonteerDataTableData" }
+    options:
+        expose: true
+
+admin_volonteer_item_data:
+    path:     /volonteer/item/{id}
+    defaults: { _controller: "AdminBundle:Member:getVolonteerItemData" }
+    options:
+        expose: true        
+
+
+admin_member_volonteer_edit:
+    path:     /volonteer/edit/{id}
+    defaults: { _controller: "AdminBundle:Member:volonteerEdit" }
+    options:
+        expose: true
+
+
+admin_member_volonteer_delete:
+    path:     /volonteer/delete
+    defaults: { _controller: "AdminBundle:Member:deleteVolonteer" }
+    options:
+        expose: true
+
+
+admin_volonteer_make_pdf:
+    path:     /volonteer/pdf
+    defaults: { _controller: "AdminBundle:Member:volonteerMakePdf" }

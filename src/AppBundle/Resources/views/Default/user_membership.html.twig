@@ -1,0 +1,224 @@
+{% extends "layout/base.html.twig" %}      
+   
+{% block content %}
+<style>
+    .fileContainer{
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.03);
+        min-height: 250px;
+        width: 100%;
+        margin-top:10px;
+        padding-bottom: 0px;
+
+    }
+    .fileContainer, .fileEditContainer {
+        position: relative;
+        }
+        
+        input[type="file"] {
+        cursor: inherit;
+        visibility: hidden;
+        font-size: 16px;
+        min-height: 100%;
+        min-width: 100%;
+        left: 0px;
+        text-align: right;
+        top: -10px;
+        z-index: -1;
+        outline: none;
+        }
+        
+        input[type="file"]:focus {
+        outline: none;
+        }
+        /* Example stylistic flourishes */
+        
+        .fileContainer {
+        cursor: pointer;
+        }  
+
+
+</style>
+<div class="page-margin-modif" style="margin-top:30px; margin-bottom:180px;">
+	<div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb" style="margin-top:20px; margin-bottom:20px;">
+                <ol class="breadcrumb" style="background-color: unset;">
+                    
+                    <li class="breadcrumb-item"><a href="{{path('app_home_page')}}">{{ 'nav.link_1'|trans }}</a></li>
+                    <li class="breadcrumb-item"><a href="{{path('fos_user_profile_show')}}">{{ 'nav.link_8'|trans }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: #3f3f3f; font-weight:500;">{{ 'nav.link_10'|trans }}</li>
+                </ol>
+            </nav>
+        </div>
+		<div class="row">
+		    <div class="col-lg-9 Ccol-12">
+            <h2 style="font-size:20px;">{{ 'nav.link_10'|trans }}</h2>
+            <h3 style="font-size: 18px; margin-top:30px; margin-bottom:30px;">{{'profile_form.title_1'|trans }}</h3>
+            <form id="newEntityForm" method="post" action="{{ path('app_user_company_info_edit', { 'id' : entity.id }) }}" class="mt-4"></form>
+            <div class="form-row ">
+                <div class="col-lg-12 col-12 mb-3">
+                    <span style="margin-right: 10px;">
+                        {{ form_errors(form.gender[0]) }}
+                        {{ form_widget(form.gender[0], {'attr': {'checked': 'checked'}}) }}
+                        {{ form_label(form.gender[0], 'profile_form.gender.1'|trans , {'label_attr': {'style': ''}}) }}
+                    </span>
+                    <span>
+                        {{ form_errors(form.gender[1]) }}
+                        {{ form_widget(form.gender[1]) }}
+                        {{ form_label(form.gender[1],  'profile_form.gender.2'|trans , {'label_attr': {'style': ''}}) }}
+                    </span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-6 col-12 mb-3">
+                    {{ form_label(form.name,  'profile_form.name'|trans ) }}
+                    {{ form_errors(form.name) }}
+                    {{ form_widget(form.name) }}
+                </div>
+                <div class="col-lg-6 col-12 input-element-right mb-3">
+                   
+                   {{ form_label(form.email, 'profile_form.email'|trans ) }}
+                   {{ form_errors(form.email) }}
+                   {{ form_widget(form.email, {'attr': {'value': entity.user.email,'disabled': 'disabled'}}) }}
+                   
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                    {{ form_label(form.phone, 'profile_form.phone'|trans ) }}
+                    {{ form_errors(form.phone) }}
+                    {{ form_widget(form.phone) }}
+                </div>
+                <div class="col-lg-6 col-12 input-element-right mb-3">
+                    {{ form_label(form.country, 'profile_form.country'|trans ) }}
+                    {{ form_errors(form.country) }}
+                    {{ form_widget(form.country) }}
+                </div>
+            </div>
+                <hr style="margin-top:30px;">
+
+
+
+                <h3 style="font-size: 18px; margin-top:30px; margin-bottom:30px;">{{'profile_form.title_2'|trans }}</h3>
+                <div class="form-row">
+                    <div class="col-lg-6 col-12 mb-3">
+                        {{ form_label(form.company_name, 'profile_form.company_name'|trans ) }}
+                        {{ form_errors(form.company_name) }}
+                        {{ form_widget(form.company_name) }}
+                    </div>
+                    <div class="col-lg-6 col-12 input-element-right mb-3">
+                    
+                    {{ form_label(form.company_email, 'profile_form.email'|trans ) }}
+                    {{ form_errors(form.company_email) }}
+                    {{ form_widget(form.company_email) }}
+                    
+                    </div>
+                    <div class="col-lg-12 col-12 mb-3">
+                        {{ form_label(form.company_phone, 'profile_form.phone'|trans ) }}
+                        {{ form_errors(form.company_phone) }}
+                        {{ form_widget(form.company_phone) }}
+                    </div>
+                </div>
+
+                <hr style="margin-top:30px;">
+                <h3 style="font-size: 18px; margin-top:30px; margin-bottom:30px;">{{'profile_form.title_3'|trans }}</h3>
+
+                <div class="form-row">
+                    <div class="col-lg-12 col-12 input-element-right mb-3">
+                        {{ form_label(form.company_activity, 'profile_form.company_activity'|trans ) }}
+                        {{ form_errors(form.company_activity) }}
+                        {{ form_widget(form.company_activity) }}
+                    </div>
+                    <div class="col-lg-12 col-12 input-element-right mb-3">
+                        {{ form_label(form.work, 'profile_form.work'|trans ) }}
+                        {{ form_errors(form.work) }}
+                        {{ form_widget(form.work) }}
+                    </div>
+                </div>           
+            
+
+                <hr style="margin-top:30px;">
+                <h3 style="font-size: 18px; margin-top:30px; margin-bottom:30px;">{{'profile_form.title_4'|trans }}</h3>
+                <div class="form-row">
+                    <label class="fileContainer required" for="appbundle_member_image_file" style="
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-image: url('{{asset('images/empty-image.jpg')}}');
+                    background-position: center center;"> 
+                    
+                    <div class="text-center default_file_input_message" style="position:relative; top:50px;">
+                        <span class="small" style="font-size:14px;">Drop files here to upload</span>                                              
+                    </div>
+
+                    </label>                          
+            
+                    {{ form_errors(form.image.file) }}
+                    {{ form_widget(form.image.file) }}
+
+                            
+                    
+                </div>                            
+
+                <div class="form-group col-12">
+                    
+            
+                    {{ form_errors(form.image.name) }}
+                    {{ form_widget(form.image.name) }}
+                                    
+                </div>  
+
+                {{ form_widget(form) }}
+
+
+             <div style="margin-top:18px; margin-bottom:18px;">
+                <button  type="submit" class="btn stripe-submit-btn" style="background-color: #00b8b1;
+                font-weight: 550 !important;
+                border-radius: 4px;
+                color:#fff;
+                font-size:13px;
+                text-transform: uppercase; padding:15px 30px;">{{'btn.save'|trans }} </button>
+             </div>
+
+
+
+
+
+          </form>
+            </div>
+	    </div>		
+	</div>
+</div>
+{% endblock %}
+
+
+{% block javascript%}
+<script>
+
+    $( "#appbundle_member_image_name" ).val("");
+      function readURL(input) 
+     {
+     
+       if (input.files && input.files[0]) {
+         var reader = new FileReader();
+     
+         reader.onload = function(e){
+           $('.fileContainer').css('background-image', 'url(' + e.target.result+ ')');          
+         }
+         reader.readAsDataURL(input.files[0]);
+       }
+     }
+     $('#appbundle_member_image_file').change(function(e){
+         readURL(this);
+         var fileName = e. target. files[0]. name;
+         $( "#appbundle_member_image_name" ).val( fileName );
+         $('.default_file_input_message').hide();
+     }); 
+   
+   
+   
+   
+   
+   
+   
+       </script>
+{% endblock %}

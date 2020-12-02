@@ -1,0 +1,43 @@
+admin_cause_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Cause:index" }
+    methods:  GET
+
+admin_cause_dataTable_data:
+    path:     /entity-data
+    defaults: { _controller: "AdminBundle:Cause:dataTableData" }
+    options:
+        expose: true
+
+
+admin_cause_item_data:
+    path:     /item/{id}
+    defaults: { _controller: "AdminBundle:Cause:getItemData" }
+    options:
+        expose: true
+
+
+admin_cause_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Cause:new" }
+    options:
+        expose: true
+   
+
+admin_cause_show:
+    path:     /show/{id}
+    defaults: { _controller: "AdminBundle:Cause:show" }
+
+
+
+admin_cause_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "AdminBundle:Cause:edit" }
+    options:
+        expose: true
+
+admin_cause_delete:
+    path:     /delete
+    defaults: { _controller: "AdminBundle:Cause:delete" }
+    options:
+        expose: true

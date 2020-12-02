@@ -1,0 +1,164 @@
+{% extends "layout/base.html.twig" %}
+{% block content %}
+
+<div>
+    <div clas="price-grid-container mt-8" style=" background: url({{asset('images/bg_2.jpg')}}) no-repeat center;  background-size:cover; height:400px; opacity:0.99"> 
+    <div class="overlay overlay-bg" style=""></div>	
+    </div>
+    
+    <div class="page-margin-modif" style="margin-top:-200px; position:relative; top:-150px;">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-12 " style="margin-bottom: -10px;margin-top:100px;">
+                    <h2 class="blog-heading heading heading--2 section-v3__heading " style="font-size:26px; margin-bottom:10px; color:#fff;">
+                        Parcourez notre blog d'actualités
+                    </h2>
+                    <p class="paragraph section-v3__paragraph" style="font-weight:600; font-size:17px; color:#fff;">
+                        Notre expérience professionnelle de plus d'une décennie nous </p>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="pricing-table-v4 justify-space-between product-pricing-content" id="pricing-table-v4-full-feature-container">
+                       {% for entity in entity %}
+                       <div class="pricing-table-v4__column flex flex-column justify-flex-start align-center mb-3">
+                            <h3 class="heading heading--3 text-center">{{ entity.name }}</h3>
+                        <div class="pricing-table-v4__price flex align-center mt-40 mb-20 text-center" >
+                        <span class="pricing-table-v4-price__currency text-bold text-charcoal-grey relative-aligment">
+                        €
+                        </span>
+                        <span class="pricing-table-v4-price__big text-bold text-charcoal-grey relative-aligment">
+                        {{entity.price}}
+                        </span>
+                        <div class="pricing-table-v4-price__small flex flex-column relative-aligment">
+                        <span class="pricing-table-v4-price-small__top text-bold text-charcoal-grey">
+                        00
+                        </span>
+                        <span class="pricing-table-v4-price-small__bottom text-charcoal-grey">
+                        /mo </span>
+                        </div>
+                        </div>
+                        <ul class="list-unstyled full-width margin-0">
+                        {% if entity.companyNameShow == true %}
+                        
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                            <i class="fa fa-check-circle" style="margin-right:10px; color:#00b8b1; font-size:20px;"></i>
+                            <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_1'|trans }}</span>
+                        </li>
+                        {% else %}
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                            <i class="fa fa-check-circle" style="margin-right:10px;  font-size:20px;"></i>
+                            <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_1'|trans }}</span>
+                        </li>
+                        {% endif %}
+                        {% if entity.companyWebsiteShow == true %}
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                        <i class="fa fa-check-circle" style="margin-right:10px; color:#00b8b1; font-size:20px;"></i>
+                        <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_2'|trans }}</span>
+                        </li>
+                        {% else %}
+
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                            <i class="fa fa-check-circle" style="margin-right:10px; font-size:20px;"></i>
+                            <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_2'|trans }}</span>
+                        </li>
+                        {% endif %}
+
+
+                        {% if entity.companyLogoShow == true %}
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                            <i class="fa fa-check-circle" style="margin-right:10px; color:#00b8b1; font-size:20px;"></i>
+                            <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_3'|trans }}</span>
+                        </li>
+                        {% else %}
+                        <li class="flex pricing-table-v4__list-item mb-20">
+                            <i class="fa fa-check-circle" style="margin-right:10px; font-size:20px;"></i>
+                            <span class="label-v4 text-charcoal-grey">{{ 'donate_page.text_3'|trans }}</span>
+                        </li>
+                        {% endif %}
+
+
+
+                        </ul>
+                        <div class="flex flex-column justify-flex-end full-height">
+                        <a  class="button button--secondary" href="{{ path('app_fund_goto_checkout_page', { 'id' : entity.id }) }}">
+                        {{ 'btn.donate_btn'|trans }} </a>
+                        </div>
+                        </div>                          
+                       {% endfor %}
+                        
+
+
+                    </div>
+
+                </div>            
+            </div>
+        </div>
+
+
+        <div class="col text-center">
+            <p class="mt-5" style="font-size: 14px; font-weight:500;">
+                A tout moment, vous pouvez dépenser le montant collecté selon vos envies : en une ou plusieurs fois, chez un ou plusieurs partenaires, cumuler ou pas les modes de dépense, c'est vous qui choisissez !
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+{% block javascript%}
+ <script>
+    $( "ul" ).on( "click", "li", function() {
+        var pos = $(this).index()+2;
+        $("tr").find('td:not(:eq(0))').hide();
+        $('td:nth-child('+pos+')').css('display','table-cell');
+        $("tr").find('th:not(:eq(0))').hide();
+        $('li').removeClass('active');
+        $(this).addClass('active');
+      });
+      
+      // Initialize the media query
+        var mediaQuery = window.matchMedia('(min-width: 640px)');
+        
+        // Add a listen event
+        mediaQuery.addListener(doSomething);
+        
+        // Function to do something with the media query
+        function doSomething(mediaQuery) {    
+          if (mediaQuery.matches) {
+            $('.sep').attr('colspan',5);
+          } else {
+            $('.sep').attr('colspan',2);
+          }
+        }
+        
+        // On load
+        doSomething(mediaQuery);
+ </script>
+{% endblock %}

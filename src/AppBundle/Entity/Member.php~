@@ -1,0 +1,490 @@
+<?php
+
+namespace AppBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Member
+ *
+ * @ORM\Table(name="member")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\MemberRepository")
+ */
+class Member
+{
+	
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Image", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $image;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="User\UserBundle\Entity\User", inversedBy="member")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $user;	
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Status", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $status;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gender", type="string", length=255, nullable=true)
+     */
+    private $gender;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
+     */
+    private $name;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="company_name", type="string", length=255, nullable=true)
+     */
+    private $company_name;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email",  type="string", length=255)
+     */
+    private $email;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="company_email",  type="string", length=255)
+     */
+    private $company_email;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="phone",  type="string", length=255, nullable=true)
+     */
+    private $phone;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="company_phone",  type="string", length=255, nullable=true)
+     */
+    private $company_phone;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="company_activity",  type="text", nullable=true)
+     */
+    private $company_activity;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Country", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $country;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="work",  type="string", length=255, nullable=true)
+     */
+    private $work;
+
+
+
+
+    /**
+     * @var \DateTime
+     * 
+     * @ORM\COlumn(name="date",type="datetime") 
+     */
+    private $date;
+
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="membershipExpirationDate", type="date", nullable=true)
+     */
+    private $membershipExpirationDate;
+
+
+
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="membershipActivation", type="boolean")
+     */
+    private $membershipActivation;
+
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="membershipWaited", type="boolean")
+     */
+    private $membershipWaited;
+
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+ 
+
+    /**
+     * Set name.
+     *
+     * @param string $name
+     *
+     * @return Member
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set email.
+     *
+     * @param string $email
+     *
+     * @return Member
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email.
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set phone.
+     *
+     * @param string|null $phone
+     *
+     * @return Member
+     */
+    public function setPhone($phone = null)
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    /**
+     * Get phone.
+     *
+     * @return string|null
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    /**
+     * Set companyActivity.
+     *
+     * @param string $companyActivity
+     *
+     * @return Member
+     */
+    public function setCompanyActivity($companyActivity)
+    {
+        $this->company_activity = $companyActivity;
+
+        return $this;
+    }
+
+    /**
+     * Get companyActivity.
+     *
+     * @return string
+     */
+    public function getCompanyActivity()
+    {
+        return $this->company_activity;
+    }
+
+    /**
+     * Set work.
+     *
+     * @param string|null $work
+     *
+     * @return Member
+     */
+    public function setWork($work = null)
+    {
+        $this->work = $work;
+
+        return $this;
+    }
+
+    /**
+     * Get work.
+     *
+     * @return string|null
+     */
+    public function getWork()
+    {
+        return $this->work;
+    }
+
+    /**
+     * Set date.
+     *
+     * @param \DateTime $date
+     *
+     * @return Member
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date.
+     *
+     * @return \DateTime
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * Set membershipActivation.
+     *
+     * @param bool $membershipActivation
+     *
+     * @return Member
+     */
+    public function setMembershipActivation($membershipActivation)
+    {
+        $this->membershipActivation = $membershipActivation;
+
+        return $this;
+    }
+
+    /**
+     * Get membershipActivation.
+     *
+     * @return bool
+     */
+    public function getMembershipActivation()
+    {
+        return $this->membershipActivation;
+    }
+
+    /**
+     * Set membershipWaited.
+     *
+     * @param bool $membershipWaited
+     *
+     * @return Member
+     */
+    public function setMembershipWaited($membershipWaited)
+    {
+        $this->membershipWaited = $membershipWaited;
+
+        return $this;
+    }
+
+    /**
+     * Get membershipWaited.
+     *
+     * @return bool
+     */
+    public function getMembershipWaited()
+    {
+        return $this->membershipWaited;
+    }
+
+    /**
+     * Set image.
+     *
+     * @param \AppBundle\Entity\Image|null $image
+     *
+     * @return Member
+     */
+    public function setImage(\AppBundle\Entity\Image $image = null)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image.
+     *
+     * @return \AppBundle\Entity\Image|null
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set user.
+     *
+     * @param \User\UserBundle\Entity\User $user
+     *
+     * @return Member
+     */
+    public function setUser(\User\UserBundle\Entity\User $user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user.
+     *
+     * @return \User\UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set status.
+     *
+     * @param \AppBundle\Entity\Status|null $status
+     *
+     * @return Member
+     */
+    public function setStatus(\AppBundle\Entity\Status $status = null)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
+     * Get status.
+     *
+     * @return \AppBundle\Entity\Status|null
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * Set country.
+     *
+     * @param \AppBundle\Entity\Country $country
+     *
+     * @return Member
+     */
+    public function setCountry(\AppBundle\Entity\Country $country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country.
+     *
+     * @return \AppBundle\Entity\Country
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set membershipExpirationDate.
+     *
+     * @param \DateTime $membershipExpirationDate
+     *
+     * @return Member
+     */
+    public function setMembershipExpirationDate($membershipExpirationDate)
+    {
+        $this->membershipExpirationDate = $membershipExpirationDate;
+
+        return $this;
+    }
+
+    /**
+     * Get membershipExpirationDate.
+     *
+     * @return \DateTime
+     */
+    public function getMembershipExpirationDate()
+    {
+        return $this->membershipExpirationDate;
+    }
+}

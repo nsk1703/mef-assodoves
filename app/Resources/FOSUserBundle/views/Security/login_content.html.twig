@@ -1,0 +1,139 @@
+
+
+<style>
+body{
+	background-color: #f8f9f9;
+}
+
+</style>
+
+
+
+{% trans_default_domain 'FOSUserBundle' %}
+{% if error %}
+	<div class="alert alert-error col-lg-12">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}	
+<div class="page-margin-modif" style="margin-top:50px; margin-bottom:180px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-12">
+				<div class="card" style=" background-color: #fff;
+			border-radius:4px; margin-bottom:30px;
+				box-shadow: 0px 3px 6px 1px rgba(0,0,0,.07);">
+
+					<div class="card-body" style="padding: 30px; ">
+
+						<h2 style="font-size: 22px;
+						font-weight: 700;
+						line-height: 26px;
+						color: #00b8b1;
+						margin-top: 0;">Sign in</h2>
+						<p class="subHead marB20">
+							Please provide your Email and Password
+						</p>
+						<form  action="{{ path("fos_user_security_check") }}" method="post">
+						{% if csrf_token %}
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+						{% endif %}
+					
+
+						<div class="form-group">
+							<label for="username">Email address</label>
+							<input type="email" class="form-control"  id="username" name="_username" placeholder="" required>
+						  </div>
+						  <div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" name="_password" placeholder="" required>
+						  </div>
+						  <div class="form-group">
+							<div class="checkbox" style="margin-top:10px; font-size: 12px;">
+								<input type="checkbox" id="remember_me" class="flat-yellow" name="_remember_me checkbox" value="on"> Remember me		
+							</div>
+							
+						  </div>
+						  <button class="btn" id="checkUser" type="submit" style="font-size: 13px !important;
+						  background-color: #00b8b1;
+						  padding: 15px 30px !important;
+							  font-weight: 500 !important;
+							  border-radius: 4px;
+							  text-transform: uppercase;
+							  border:none;
+							  color:#fff;
+							  font-weight:500;
+							  font-size:13px;
+						  border-radius:4px;
+						  box-shadow: 0 2px 12px -6px #00b8b1!important;">Sign In</button>
+
+						
+						</form>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-lg-4 col-12">
+				<div class="card" style=" background-color: #fff;
+				padding: 30px; border-radius:4px;
+				text-align: center; box-shadow: 0px 1px 12px 1px rgba(50,69,76,.1);">
+					<div class="card-body">
+					<h5 class="card-title" style="font-size: 15px;
+					font-weight: 700;
+					line-height: 20px;
+					color: #3e4153;
+					margin: 0;">Not registered yet?</h5>
+					
+					<p class="card-text" style="font-size: 14px;
+					font-weight: 400;
+					line-height: 22px;
+					color: #3e4153;
+					margin: 15px 0;">Register now to post, edit, and manage ads. It’s quick, easy, and free!</p>
+					<a href="{{ path('fos_user_registration_register') }}" class="card-link"
+					style="font-size: 13px !important;
+					background-color: #00b8b1;
+					padding: 10px 20px !important;
+						font-weight: 500 !important;
+						border-radius: 4px;
+						text-transform: uppercase;
+						border:none;
+						color:#fff;
+						font-weight:500;
+						font-size:13px;
+					border-radius:4px;
+					box-shadow: 0 2px 12px -6px #00b8b1!important;
+					">Register Now</a>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+

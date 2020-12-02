@@ -1,0 +1,13 @@
+app_article_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Blog:index" }
+    methods:  GET
+
+app_article_show:
+    path:     /{slug}
+    defaults: { _controller: "AppBundle:Blog:show" }
+
+
+app_catalogue_index:
+    path:     /category/{slug}
+    defaults: { _controller: "AppBundle:Blog:catalogue" }
