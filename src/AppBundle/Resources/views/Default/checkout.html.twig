@@ -63,12 +63,9 @@
       <div class="row">
           <div class="col-lg-12" style="margin-bottom:80px;">
 
-                
-              
                 <div class=" mt-4" >
                   <div id="stripe-gateway" class="">
-                     <a  href="#stripe-gateway-content" role="button" aria-expanded="true" aria-controls="stripe-gateway-content"
-                     >
+                     <a  href="#stripe-gateway-content" role="button" aria-expanded="true" aria-controls="stripe-gateway-content">
                         <div class="payment-badge">
                            <span class="fa fa-shield-alt" style="font-size:20px; margin-right:5px;color: #4183d7;"></span> 
                            <span style="font-size:14px; margin-right:10px; font-weight:600; color:#313131;">
@@ -81,7 +78,6 @@
                            </span>
                            <span class="fa fa-angle-down" style="font-size:18px; color:#313131;margin-left:10px;"></span>
                         </div>
-
                      </a>
                      {% for flashMessage in app.session.flashbag.get('error') %}
 
@@ -105,19 +101,18 @@
                      
                       <div class="form-row">
                         <div class="col-lg-12 col-12 mb-3">
-                                
+
                           {{ form_label(form.username, "Votre nom*") }}
                           {{ form_errors(form.username) }}
                           {{ form_widget(form.username) }}
-                         
-                        </div>
 
+                        </div>
                           <div class="col-lg-6 col-12 mb-3">
-                                  
+
                               {{ form_label(form.phone, "Téléphone*") }}
                               {{ form_errors(form.phone) }}
                               {{ form_widget(form.phone) }}
-                              
+
                           </div>
                           <div class="col-lg-6 col-12 input-element-right mb-3">
                               
@@ -181,7 +176,7 @@
 
                      <div class="spinner hidden" id="spinner"></div>
                      <div style="margin-top:18px; margin-bottom:18px;">
-                        <button id="pay-button" type="submit" class="btn stripe-submit-btn" >Donner <span class="totalAmountToPay">10</span> € </button>
+                        <button id="pay-button" type="submit" class="btn stripe-submit-btn" >Donner <span class="totalAmountToPay">1</span> € </button>
                      </div>
 
                      {{ form_widget(form) }}
@@ -256,7 +251,7 @@
    ***********************************/
    // Set your publishable key: remember to change this to your live publishable key in production
    // See your keys here: https://dashboard.stripe.com/account/apikeys
-   var stripe = Stripe('pk_live_51HO2UtH9HySmKb9BVDI2XqzDfPb8pb9h1l9bt8jCUdZxLgrbfD4lUC7e1cTbXNnUWYWCR9uqJGznUqhhn0lTh73200zXlTRyno');
+   var stripe = Stripe('pk_test_51HO2UtH9HySmKb9Bk68vy0lZXKJI6SP297KzdR4ew5M01WSxBFPbcRjtBWSCBfnXQmwMHskTkGfkG30XH1ghzb8w007CXLJUmO\n');
    var elements = stripe.elements();
   var style = {
   base: {

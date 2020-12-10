@@ -20,7 +20,7 @@ class StripePayType extends AbstractType
         ->add('phone', TextType::class, ['attr' => ['class' => 'field']])
         ->add('email', TextType::class, ['attr' => ['class' => 'field']])
         ->add('username', TextType::class, ['attr' => ['class' => 'field longField']])
-        ->add('amount', IntegerType::class, ['attr' => ['class' => 'field text-center amount longField','min'=>'10', 'value'=> '10','style'=>'font-size:20px;color:#00b8b1;']])
+        ->add('amount', IntegerType::class, ['attr' => ['class' => 'field text-center amount longField','min'=>'1', 'value'=> '1','style'=>'font-size:20px;color:#00b8b1;']])
         ->add('accountName', TextType::class, ['attr' => ['class' => 'field']])
         ->add('secure_token', HiddenType::class)
         ;

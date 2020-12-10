@@ -51,7 +51,7 @@ class PayController extends Controller
                 $totalAmount = $form['amount']->getData() * 100;
         
                 // This is your real test secret API key.
-                \Stripe\Stripe::setApiKey('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');
+                \Stripe\Stripe::setApiKey('sk_test_51HO2UtH9HySmKb9BrBUTpmQXWMVi2ZevcXXb6aLwFhxvLLM0Ka5II0PvtTAUOtU0QmcSJV3KGbq0R6zEV3xMiJGh00m1C8BXQK');
         
                 $userEmail = $form['email']->getData();
                 $cardName = $form['accountName']->getData();

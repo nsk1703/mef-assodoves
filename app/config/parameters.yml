@@ -6,10 +6,10 @@ parameters:
     database_user: root
     database_password: null
     mailer_transport: smtp
-    mailer_host: mail.mef-assodoves.org
-    mailer_user: no-reply@mef-assodoves.org
-    mailer_password: 'XGfVBb.Oi#MP'
-    secret: ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ
+    mailer_host: smtp.gmail.com
+    mailer_user: hitechmarket@gmail.com
+    mailer_password: 'jixfdxingdkebgft'
+    secret: e49cc78c80b7c7c695680b06ca19a2ca5176ce47
     facebook: facebook.com
     twitter: twitter.com
     instagram: instagram.com

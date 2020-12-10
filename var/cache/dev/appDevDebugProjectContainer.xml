@@ -154,10 +154,10 @@
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">null</parameter>
     <parameter key="mailer_transport">smtp</parameter>
-    <parameter key="mailer_host">mail.mef-assodoves.org</parameter>
-    <parameter key="mailer_user">no-reply@mef-assodoves.org</parameter>
-    <parameter key="mailer_password">XGfVBb.Oi#MP</parameter>
-    <parameter key="secret">ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ</parameter>
+    <parameter key="mailer_host">smtp.gmail.com</parameter>
+    <parameter key="mailer_user">hitechmarket@gmail.com</parameter>
+    <parameter key="mailer_password">jixfdxingdkebgft</parameter>
+    <parameter key="secret">e49cc78c80b7c7c695680b06ca19a2ca5176ce47</parameter>
     <parameter key="facebook">facebook.com</parameter>
     <parameter key="twitter">twitter.com</parameter>
     <parameter key="instagram">instagram.com</parameter>
@@ -165,7 +165,7 @@
     <parameter key="locale">fr</parameter>
     <parameter key="fragment.renderer.hinclude.global_template">null</parameter>
     <parameter key="fragment.path">/_fragment</parameter>
-    <parameter key="kernel.secret">ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ</parameter>
+    <parameter key="kernel.secret">e49cc78c80b7c7c695680b06ca19a2ca5176ce47</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
     <parameter key="kernel.default_locale">fr</parameter>
@@ -269,9 +269,9 @@
     <parameter key="swiftmailer.mailer.default.transport.name">smtp</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.host">mail.mef-assodoves.org</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.username">no-reply@mef-assodoves.org</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.password">XGfVBb.Oi#MP</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.host">smtp.gmail.com</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.username">hitechmarket@gmail.com</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.password">jixfdxingdkebgft</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
@@ -412,7 +412,7 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.from_email" type="collection">
-      <parameter key="no-reply@mef-assodoves.org">no-reply@mef-assodoves.org</parameter>
+      <parameter key="hitechmarket@gmail.com">hitechmarket@gmail.com</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
     <parameter key="fos_user.registration.form.type">User\UserBundle\Form\RegistrationFormType</parameter>
@@ -428,7 +428,7 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.resetting.email.from_email" type="collection">
-      <parameter key="no-reply@mef-assodoves.org">no-reply@mef-assodoves.org</parameter>
+      <parameter key="hitechmarket@gmail.com">hitechmarket@gmail.com</parameter>
     </parameter>
     <parameter key="fos_user.resetting.retry_ttl">7200</parameter>
     <parameter key="fos_user.resetting.token_ttl">86400</parameter>
@@ -1009,7 +1009,7 @@
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
-      <argument>ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ</argument>
+      <argument>e49cc78c80b7c7c695680b06ca19a2ca5176ce47</argument>
     </service>
     <service id="config_cache_factory" class="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">
       <argument type="tagged" tag="config_cache.resource_checker"/>
@@ -4113,14 +4113,14 @@
     </service>
     <service id="security.authentication.provider.rememberme.main" class="Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider" public="false">
       <argument type="service" id="security.user_checker"/>
-      <argument>ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ</argument>
+      <argument>e49cc78c80b7c7c695680b06ca19a2ca5176ce47</argument>
       <argument>main</argument>
     </service>
     <service id="security.authentication.rememberme.services.simplehash.main" class="Symfony\Component\Security\Http\RememberMe\TokenBasedRememberMeServices" public="false">
       <argument type="collection">
         <argument type="service" id="fos_user.user_provider.username_email"/>
       </argument>
-      <argument>ECSh52MGF3Zqm9R7r46VU8WtJfDvLizXpxQ</argument>
+      <argument>e49cc78c80b7c7c695680b06ca19a2ca5176ce47</argument>
       <argument>main</argument>
       <argument type="collection">
         <argument key="lifetime">31536000</argument>
@@ -4801,10 +4801,10 @@
         <argument type="service" id="3_Swift_Transport_Esmtp_Auth_PlainAuthenticator~yebwbud"/>
       </argument>
       <call method="setUsername">
-        <argument>no-reply@mef-assodoves.org</argument>
+        <argument>hitechmarket@gmail.com</argument>
       </call>
       <call method="setPassword">
-        <argument>XGfVBb.Oi#MP</argument>
+        <argument>jixfdxingdkebgft</argument>
       </call>
       <call method="setAuthMode">
         <argument>null</argument>
@@ -4824,7 +4824,7 @@
       </argument>
       <argument type="service" id="swiftmailer.mailer.default.transport.eventdispatcher"/>
       <call method="setHost">
-        <argument>mail.mef-assodoves.org</argument>
+        <argument>smtp.gmail.com</argument>
       </call>
       <call method="setPort">
         <argument>25</argument>

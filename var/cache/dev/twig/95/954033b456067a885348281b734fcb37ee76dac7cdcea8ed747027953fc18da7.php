@@ -519,15 +519,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
             </div>
         </div>
         <style>
-            @slideSpeed: 2s
-            .carousel-inner {
-                > .item {
-                .transition(@slideSpeed ease-in-out left);
-                @media all and (transform-3d), (-webkit-transform-3d) {
-                    transition: transform @slideSpeed ease-in-out;
-                }
-            }
-            }
+            
             .block-27 ul {
                 padding: 0;
                 margin: 0;
@@ -574,8 +566,8 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
                 <div class=\"col text-center\">
                     <div class=\"block-27\">
                         ";
-        // line 311
-        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->render($this->env, (isset($context["entity"]) || array_key_exists("entity", $context) ? $context["entity"] : (function () { throw new RuntimeError('Variable "entity" does not exist.', 311, $this->source); })()));
+        // line 303
+        echo $this->extensions['Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension']->render($this->env, (isset($context["entity"]) || array_key_exists("entity", $context) ? $context["entity"] : (function () { throw new RuntimeError('Variable "entity" does not exist.', 303, $this->source); })()));
         echo "
                     </div>
                 </div>
@@ -592,7 +584,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
 
     }
 
-    // line 319
+    // line 311
     public function block_modals($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -602,7 +594,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "modals"));
 
-        // line 320
+        // line 312
         echo "
 ";
         
@@ -613,7 +605,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
 
     }
 
-    // line 328
+    // line 320
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -623,7 +615,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascript"));
 
-        // line 329
+        // line 321
         echo "    <script>
 
         /* 
@@ -668,7 +660,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
 
     public function getDebugInfo()
     {
-        return array (  627 => 329,  617 => 328,  606 => 320,  596 => 319,  578 => 311,  508 => 244,  496 => 235,  488 => 230,  465 => 210,  460 => 207,  453 => 205,  442 => 197,  431 => 189,  426 => 186,  424 => 185,  415 => 179,  404 => 171,  399 => 168,  396 => 167,  392 => 166,  386 => 163,  378 => 157,  372 => 156,  361 => 150,  357 => 149,  344 => 139,  339 => 137,  333 => 133,  331 => 132,  321 => 127,  317 => 126,  304 => 116,  299 => 114,  293 => 110,  290 => 109,  286 => 108,  278 => 103,  269 => 96,  263 => 95,  254 => 91,  248 => 90,  242 => 89,  236 => 86,  232 => 84,  230 => 83,  222 => 80,  216 => 79,  210 => 78,  204 => 75,  201 => 74,  198 => 73,  194 => 72,  178 => 59,  172 => 56,  166 => 53,  160 => 50,  154 => 47,  148 => 44,  142 => 41,  136 => 38,  130 => 35,  124 => 32,  115 => 25,  110 => 18,  105 => 16,  98 => 15,  93 => 13,  87 => 12,  80 => 11,  78 => 10,  70 => 4,  60 => 3,  37 => 1,);
+        return array (  619 => 321,  609 => 320,  598 => 312,  588 => 311,  570 => 303,  508 => 244,  496 => 235,  488 => 230,  465 => 210,  460 => 207,  453 => 205,  442 => 197,  431 => 189,  426 => 186,  424 => 185,  415 => 179,  404 => 171,  399 => 168,  396 => 167,  392 => 166,  386 => 163,  378 => 157,  372 => 156,  361 => 150,  357 => 149,  344 => 139,  339 => 137,  333 => 133,  331 => 132,  321 => 127,  317 => 126,  304 => 116,  299 => 114,  293 => 110,  290 => 109,  286 => 108,  278 => 103,  269 => 96,  263 => 95,  254 => 91,  248 => 90,  242 => 89,  236 => 86,  232 => 84,  230 => 83,  222 => 80,  216 => 79,  210 => 78,  204 => 75,  201 => 74,  198 => 73,  194 => 72,  178 => 59,  172 => 56,  166 => 53,  160 => 50,  154 => 47,  148 => 44,  142 => 41,  136 => 38,  130 => 35,  124 => 32,  115 => 25,  110 => 18,  105 => 16,  98 => 15,  93 => 13,  87 => 12,  80 => 11,  78 => 10,  70 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -929,15 +921,7 @@ class __TwigTemplate_654cfc7b3bcc790809de681937695fa7a0cffb4e2dfb67c0b719361c2d9
             </div>
         </div>
         <style>
-            @slideSpeed: 2s
-            .carousel-inner {
-                > .item {
-                .transition(@slideSpeed ease-in-out left);
-                @media all and (transform-3d), (-webkit-transform-3d) {
-                    transition: transform @slideSpeed ease-in-out;
-                }
-            }
-            }
+            
             .block-27 ul {
                 padding: 0;
                 margin: 0;
